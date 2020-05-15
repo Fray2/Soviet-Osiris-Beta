@@ -14,7 +14,7 @@
 	var/list/postertypes = list(
 		"ironhammer" = COLOR_LIGHTING_BLUE_BRIGHT,
 		"frozenstar" = COLOR_LIGHTING_BLUE_BRIGHT,
-		"neotheology" = COLOR_LIGHTING_ORANGE_BRIGHT,
+		"absolutism" = COLOR_LIGHTING_ORANGE_BRIGHT,
 		"asters" = COLOR_LIGHTING_GREEN_BRIGHT,
 		"tehnomancers" = COLOR_LIGHTING_ORANGE_BRIGHT,
 		"moebius" = COLOR_LIGHTING_PURPLE_BRIGHT,

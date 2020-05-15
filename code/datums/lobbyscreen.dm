@@ -52,10 +52,10 @@
 //		'sound/music/lobby/Duke_Gneiss-Downtown_2.ogg'
 //		)
 
-///datum/lobbyscreen/neotheology
-//	image_file = 'icons/title_screens/neotheology.png'
+///datum/lobbyscreen/absolutism
+//	image_file = 'icons/title_screens/absolutism.png'
 //	possibleMusic = list(
-//		'sound/music/lobby/Duke_Gneiss-Neotheology.ogg')
+//		'sound/music/lobby/Duke_Gneiss-Absolutism.ogg')
 
 /datum/lobbyscreen/proc/play_music(client/C)
 	if(!musicTrack)

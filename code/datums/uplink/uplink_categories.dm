@@ -45,7 +45,7 @@
 /datum/uplink_category/badassery
 	name = "Badassery"
 
-/datum/uplink_category/neotheology
+/datum/uplink_category/absolutism
 	name = "NeoTheology"
 
 /datum/uplink_category/telecrystals

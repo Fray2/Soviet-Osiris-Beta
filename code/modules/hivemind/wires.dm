@@ -287,7 +287,7 @@
 		if(ishuman(subject))
 			var/mob/living/L = subject
 			//if our target has cruciform, let's just leave it
-			if(is_neotheology_disciple(L))
+			if(is_absolutism_disciple(L))
 				return
 			for(var/obj/item/W in L)
 				L.drop_from_inventory(W)

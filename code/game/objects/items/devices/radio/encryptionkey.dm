@@ -47,7 +47,7 @@
 	channels = list("Medical" = 1)
 
 /obj/item/device/encryptionkey/headset_church
-	name = "neotheology radio encryption key"
+	name = "absolutism radio encryption key"
 	icon_state = "nt_cypherkey"
 	channels = list("NT Voice" = 1)
 

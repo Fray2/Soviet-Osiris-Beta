@@ -71,3 +71,14 @@
 
 	item_suffix = "_wood"
 	wielded_item_state = "_doble_wood"
+
+/obj/item/weapon/gun/projectile/automatic/ak47/sa
+	name = "\"Kalashnikov\" carbine"
+	desc = "Weapon of the oppressed, oppressors, and extremists of all flavours. \
+		 A poor copy of the AKM pattern, shortened into a mid-length carbine and chambered in .257. The left arm of the unfree world."
+	icon = 'icons/obj/guns/projectile/ak_wood.dmi'
+	icon_state = "AK"
+	item_state = "AK"
+	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_WOOD = 10)
+	price_tag = 3000
+	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)

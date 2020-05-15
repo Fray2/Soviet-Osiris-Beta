@@ -1,6 +1,6 @@
 /datum/faction
 	var/id = null
-	var/name = "faction"	//name displayed in different places
+	name = "faction"	//name displayed in different places
 	var/antag = "antag"		//name for the faction members
 	var/antag_plural = "antags"
 	var/welcome_text = "Hello, antagonist!"

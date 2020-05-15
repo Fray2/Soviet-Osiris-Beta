@@ -7,7 +7,7 @@
 
 /obj/machinery/biomatter_solidifier
 	name = "biomatter solidifier"
-	desc = "A Neotheology machine that converts liquid biomatter into the solid."
+	desc = "A Absolutism machine that converts liquid biomatter into the solid."
 	icon = 'icons/obj/machines/simple_nt_machines.dmi'
 	icon_state = "solidifier"
 	density = TRUE
@@ -16,7 +16,7 @@
 	idle_power_usage = 5
 	active_power_usage = 300
 
-	circuit = /obj/item/weapon/circuitboard/neotheology/solidifier
+	circuit = /obj/item/weapon/circuitboard/absolutism/solidifier
 	var/active = FALSE
 	var/port_dir = NORTH
 	var/obj/structure/reagent_dispensers/biomatter/container

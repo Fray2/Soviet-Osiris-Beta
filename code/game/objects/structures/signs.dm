@@ -544,22 +544,22 @@
 	desc = "Shady pharmaceutical and prosthetic manufacturer. Few outsiders know what happens behind the doors of their labs, and whoever knows does not live a long life."
 	icon_state = "moebius"
 
-/obj/structure/sign/faction/neotheology
+/obj/structure/sign/faction/absolutism
 	name = "NeoTheology"
 	desc = "the Tau Cross - symbol of NeoTheology."
-	icon_state = "neotheology"
+	icon_state = "absolutism"
 
-/obj/structure/sign/faction/neotheology_old
+/obj/structure/sign/faction/absolutism_old
 	name = "NeoTheology"
 	desc = "the Tau Cross - symbol of NeoTheology."
-	icon_state = "neotheology-old"
+	icon_state = "absolutism-old"
 
-/obj/structure/sign/faction/neotheology_cross
+/obj/structure/sign/faction/absolutism_cross
 	name = "NeoTheology Tau cross"
 	desc = "Religious symbol of NeoTheology - the Tau cross. It looks like a decoration, not a real cruciform."
 	icon_state = "wall_cross_steel"
 
-/obj/structure/sign/faction/neotheology_cross/gold
+/obj/structure/sign/faction/absolutism_cross/gold
 	icon_state = "wall_cross_gold"
 
 /obj/structure/sign/faction/astersguild

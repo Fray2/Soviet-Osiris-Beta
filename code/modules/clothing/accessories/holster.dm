@@ -128,3 +128,111 @@
 	name = "hip holster"
 	desc = "A handgun holster slung low on the hip, draw pardner!"
 	icon_state = "holster_hip"
+
+/obj/item/clothing/accessory/holster/leg
+	name = "leg holster"
+	desc = "A leather weapon holster mounted around the upper leg."
+	icon_state = "holster_leg"
+	overlay_state = "holster_leg"
+
+
+/*
+Sword holsters
+*/
+//DISABLED UNTIL SWORDS ARE ADDED
+/*
+/obj/item/clothing/accessory/holster/saber
+	name = "saber scabbard"
+	desc = "A white leather weapon sheath mounted around the waist."
+	icon_state = "saber_holster"
+	overlay_state = "saber"
+	slot = "utility"
+	can_hold = list(/obj/item/weapon/tool/sword/saber)
+	price_tag = 200
+	sound_in = 'sound/effects/sheathin.ogg'
+	sound_out = 'sound/effects/sheathout.ogg'
+
+/obj/item/clothing/accessory/holster/saber/update_icon()
+	..()
+	cut_overlays()
+	if(contents.len)
+		add_overlay(image('icons/inventory/accessory/icon.dmi', "saber_layer"))
+
+
+/obj/item/clothing/accessory/holster/saber/occupied
+	var/holstered_spawn = /obj/item/weapon/tool/sword/saber
+
+/obj/item/clothing/accessory/holster/saber/occupied/Initialize()
+	holstered = new holstered_spawn
+
+
+
+
+/obj/item/clothing/accessory/holster/saber/greatsword
+	name = "greatsword scabbard"
+	desc = "A sturdy brown leather scabbard with gold trim. It's made for a massive sword. Deus Vult."
+	icon_state = "crusader_holster"
+	overlay_state = "crusader"
+	can_hold = list(/obj/item/weapon/tool/sword)
+
+/obj/item/clothing/accessory/holster/saber/greatsword/update_icon()
+	..()
+	cut_overlays()
+	if(contents.len)
+		add_overlay(image('icons/inventory/accessory/icon.dmi', "crusader_layer"))
+
+/obj/item/clothing/accessory/holster/saber/greatsword/occupied
+	var/holstered_spawn = /obj/item/weapon/tool/sword/crusader
+
+/obj/item/clothing/accessory/holster/saber/greatsword/occupied/Initialize()
+	holstered = new holstered_spawn
+
+
+
+
+/obj/item/clothing/accessory/holster/saber/machete
+	name = "machete scabbard"
+	desc = "A sturdy black leather scabbard. For the survivalist in you."
+	icon_state = "machete_holster"
+	overlay_state = "machete"
+	can_hold = list(/obj/item/weapon/tool/sword/machete)
+
+/obj/item/clothing/accessory/holster/saber/machete/update_icon()
+	..()
+	cut_overlays()
+	if(contents.len)
+		add_overlay(image('icons/inventory/accessory/icon.dmi', "machete_layer"))
+
+/obj/item/clothing/accessory/holster/saber/machete/occupied
+	var/holstered_spawn = /obj/item/weapon/tool/sword/machete
+
+/obj/item/clothing/accessory/holster/saber/machete/occupied/Initialize()
+	holstered = new holstered_spawn
+
+
+
+
+/obj/item/clothing/accessory/holster/saber/cutlass
+	name = "cutlass scabbard"
+	desc = "A simple brown scabbard meant for a cutlass. For pirates and military men who take themselves too seriously."
+	icon_state = "cutlass_holster"
+	overlay_state = "cutlass"
+	slot = "utility"
+	can_hold = list(/obj/item/weapon/tool/sword/saber, /obj/item/weapon/tool/sword/katana)
+	price_tag = 200
+	sound_in = 'sound/effects/sheathin.ogg'
+	sound_out = 'sound/effects/sheathout.ogg'
+
+/obj/item/clothing/accessory/holster/saber/cutlass/update_icon()
+	..()
+	cut_overlays()
+	if(contents.len)
+		add_overlay(image('icons/inventory/accessory/icon.dmi', "cutlass_layer"))
+
+
+/obj/item/clothing/accessory/holster/saber/cutlass/occupied
+	var/holstered_spawn = /obj/item/weapon/tool/sword/saber/cutlass
+
+/obj/item/clothing/accessory/holster/saber/cutlass/occupied/Initialize()
+	holstered = new holstered_spawn
+*/

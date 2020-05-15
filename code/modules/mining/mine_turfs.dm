@@ -7,6 +7,28 @@
 	density = 1
 	layer = EDGED_TURF_LAYER
 
+//IDK why it's here, but I'm just porting it from sojorun
+
+/turf/unsimulated/wall/jungle
+	name = "dense forestry"
+	icon = 'icons/turf/flooring/grass.dmi'
+	icon_state = "wall2"
+	desc = "A thick, impassable mass of plants and shrubbery."
+	blocks_air = 1
+	density = 1
+	opacity = 1
+
+/turf/unsimulated/wall/jungle/variant
+	name = "dense forestry"
+	icon = 'icons/turf/flooring/grass.dmi'
+	icon_state = "wall1"
+	desc = "A thick, impassable mass of plants and shrubbery."
+	blocks_air = 1
+	density = 1
+	opacity = 1
+
+//jungle wall turfs ends here
+
 /turf/simulated/mineral //wall piece
 	name = "Rock"
 	icon = 'icons/turf/walls.dmi'
@@ -396,6 +418,10 @@
 	mineralChance = 100 //25
 	mineralSpawnChanceList = list("Uranium" = 10, "Platinum" = 10, "Iron" = 20, "Coal" = 20, "Diamond" = 2, "Gold" = 10, "Silver" = 10, "Plasma" = 20)
 
+/********************** Planet **************************/
+
+/turf/simulated/mineral/planet
+	mined_turf = /turf/simulated/floor/asteroid/dirt
 
 /**********************Asteroid**************************/
 

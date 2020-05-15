@@ -39,7 +39,7 @@
 		implant.hidden_uplink = uplink
 		uplink.uplink_owner = M.mind
 
-		//Update the nanodata after installation, to activate the neotheology category
+		//Update the nanodata after installation, to activate the absolutism category
 		uplink.update_nano_data()
 
 
@@ -121,9 +121,9 @@
 	module.user = user
 
 
-/datum/core_module/cruciform/neotheologyhud
+/datum/core_module/cruciform/absolutismhud
 
-/datum/core_module/cruciform/neotheologyhud/proc/update_crucihud()
+/datum/core_module/cruciform/absolutismhud/proc/update_crucihud()
 	if(implant.wearer.client)
 		for(var/mob/living/carbon/human/christian in disciples)
 			var/image/I = image('icons/mob/hud.dmi', christian, icon_state = "hudcyberchristian", layer = ABOVE_LIGHTING_LAYER)

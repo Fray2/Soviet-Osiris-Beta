@@ -223,11 +223,11 @@ var/list/all_supply_groups = list("Operations","Security","Hospitality","Enginee
 					/obj/item/weapon/handcuffs,
 					/obj/item/weapon/handcuffs,
 					/obj/item/weapon/handcuffs,
-					/obj/item/clothing/head/armor/riot_hud,
+//					/obj/item/clothing/head/armor/riot_hud,
 					/obj/item/clothing/suit/armor/heavy/riot,
-					/obj/item/clothing/head/armor/riot_hud,
+//					/obj/item/clothing/head/armor/riot_hud,
 					/obj/item/clothing/suit/armor/heavy/riot,
-					/obj/item/clothing/head/armor/riot_hud,
+//					/obj/item/clothing/head/armor/riot_hud,
 					/obj/item/clothing/suit/armor/heavy/riot)
 	cost = 6100
 	containertype = /obj/structure/closet/crate/secure

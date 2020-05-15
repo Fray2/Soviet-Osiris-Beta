@@ -68,10 +68,10 @@
 	new /obj/item/weapon/tool/wirecutters(src)
 	new /obj/item/stack/cable_coil/random(src)
 
-/obj/item/weapon/storage/belt/utility/neotheology
+/obj/item/weapon/storage/belt/utility/absolutism
 	name = "neotheologian utility belt"
 	desc = "Waist-held holy items."
-	icon_state = "utility_neotheology"
+	icon_state = "utility_absolutism"
 	can_hold_extra = list(
 		/obj/item/weapon/book/ritual/cruciform,
 		/obj/item/weapon/implant/core_implant/cruciform
@@ -146,10 +146,10 @@
 		/obj/item/taperoll
 	)
 
-/obj/item/weapon/storage/belt/security/neotheology
+/obj/item/weapon/storage/belt/security/absolutism
 	name = "neotheologian tactical belt"
 	desc = "Can hold various military and security equipment."
-	icon_state = "tactical_neotheology"
+	icon_state = "tactical_absolutism"
 	can_hold_extra = list(
 		/obj/item/weapon/book/ritual/cruciform,
 		/obj/item/weapon/implant/core_implant/cruciform,

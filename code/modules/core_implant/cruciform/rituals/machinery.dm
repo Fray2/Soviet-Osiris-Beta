@@ -16,7 +16,7 @@
 /datum/ritual/cruciform/machines/resurrection/perform(mob/living/carbon/human/user, obj/item/weapon/implant/core_implant/C)
 	var/list/OBJS = get_front(user)
 
-	var/obj/machinery/neotheology/cloner/pod = locate(/obj/machinery/neotheology/cloner) in OBJS
+	var/obj/machinery/absolutism/cloner/pod = locate(/obj/machinery/absolutism/cloner) in OBJS
 
 	if(!pod)
 		fail("You fail to find any cloner here.", user, C)

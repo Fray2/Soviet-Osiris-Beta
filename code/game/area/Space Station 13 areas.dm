@@ -53,7 +53,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	var/sound_env = STANDARD_STATION
 	var/turf/base_turf //The base turf type of the area, which can be used to override the z-level's base turf
 
-	var/vessel = "CEV Eris" //The ship or station this area is on. This is so far just for the benefit of shield generators
+	var/vessel = "Nadezhda Colony" //The ship or station this area is on. This is so far just for the benefit of shield generators
 	//Consoles can only control shields on the same vessel as them
 
 /*Adding a wizard area teleport list because motherfucking lag -- Urist*/
@@ -692,6 +692,59 @@ area/space/atmosalert()
 	name = "\improper AI Main New"
 	icon_state = "storage"
 
+//Elevators
+/area/shuttle/mining_elevator
+	name = "\improper Mining Elevator"
+	base_turf = /turf/simulated/floor/plating/under
+	requires_power = 1
+	dynamic_lighting = 0
+
+/area/shuttle/mining_elevator/colony
+	icon_state = "shuttle2"
+
+/area/shuttle/mining_elevator/deep_t
+	icon_state = "shuttle"
+	base_turf = /turf/simulated/floor/plating/under
+
+/area/shuttle/research_elevator
+	name = "\improper Research Elevator"
+	base_turf = /turf/simulated/floor/plating/under
+	requires_power = 1
+	dynamic_lighting = 0
+
+/area/shuttle/research_elevator/colony
+	icon_state = "shuttle2"
+
+/area/shuttle/research_elevator/deep_t
+	icon_state = "shuttle"
+	base_turf = /turf/simulated/floor/plating/under
+
+/area/shuttle/surface_elevator1
+	name = "\improper Surface Elevator 1"
+	base_turf = /turf/simulated/floor/plating/under
+	requires_power = 1
+	dynamic_lighting = 0
+
+/area/shuttle/surface_elevator1/surface
+	icon_state = "shuttle2"
+
+/area/shuttle/surface_elevator1/underground
+	icon_state = "shuttle"
+	base_turf = /turf/simulated/floor/plating/under
+
+/area/shuttle/surface_elevator2
+	name = "\improper Surface Elevator 2"
+	base_turf = /turf/simulated/floor/plating/under
+	requires_power = 1
+	dynamic_lighting = 0
+
+/area/shuttle/surface_elevator2/colony
+	icon_state = "shuttle2"
+
+/area/shuttle/surface_elevator2/deep_t
+	icon_state = "shuttle"
+	base_turf = /turf/simulated/floor/plating/under
+
 
 
 //Misc
@@ -891,4 +944,5 @@ var/list/centcom_areas = list (
 	var/mob_spawns = list()
 	var/teleporter_spawns = list()
 	var/teleporter
+	base_turf = /turf/simulated/floor/asteroid/dirt
 

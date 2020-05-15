@@ -1,5 +1,5 @@
 /*******************************
-* NeoTheology: Religious items *
+* Absolutism: Religious items *
 *******************************/
 /*
 Intended for inquisitors and maybe future crusaders
@@ -10,7 +10,7 @@ A small pool of thematically appropriate religious items that are generally chea
 //Lets make sure only appropriately ranked NT Church members can see this category
 //We do this by setting canview conditions on the individual items like this.
 //These are checked by the category, and also in other places
-/datum/uplink_item/item/neotheology/can_view(obj/item/device/uplink/U)
+/datum/uplink_item/item/absolutism/can_view(obj/item/device/uplink/U)
 	if (!U || !U.uplink_owner || !U.uplink_owner.current)
 		return FALSE
 
@@ -35,18 +35,18 @@ A small pool of thematically appropriate religious items that are generally chea
 
 
 
-/datum/uplink_item/item/neotheology
-	category = /datum/uplink_category/neotheology
+/datum/uplink_item/item/absolutism
+	category = /datum/uplink_category/absolutism
 
 //A single blank cruciform implant, nothing special about it. Useful for field baptism
-/datum/uplink_item/item/neotheology/cruciform
+/datum/uplink_item/item/absolutism/cruciform
 	name = "Cruciform Implant"
 	item_cost = 1
 	path = /obj/item/weapon/implant/core_implant/cruciform
 
 
 //A ritual book, for if you lose your own. Note that all books are the same, the rituals are stored in the cruciform implant
-/datum/uplink_item/item/neotheology/bible
+/datum/uplink_item/item/absolutism/bible
 	name = "Ritual Book"
 	item_cost = 1
 	path = /obj/item/weapon/book/ritual/cruciform
@@ -56,63 +56,63 @@ A small pool of thematically appropriate religious items that are generally chea
 
 //A priest cruciform implant, allows field promotion of a disciple to a preacher.
 //This also requires an inquisitor ritual to complete the process, so it can't be done by anyone else
-/datum/uplink_item/item/neotheology/priest
+/datum/uplink_item/item/absolutism/priest
 	name = "Preacher Ascension Kit"
 	item_cost = 3
 	path = /obj/item/weapon/coreimplant_upgrade/cruciform/priest
 
 
 //Ritual blade, for if you need a competent weapon, or for replacing one the preacher lost
-/datum/uplink_item/item/neotheology/knife
+/datum/uplink_item/item/absolutism/knife
 	name = "Ritual Blade"
 	item_cost = 2
 	path = /obj/item/weapon/tool/knife/neotritual
 
 
-/datum/uplink_item/item/neotheology/coat
+/datum/uplink_item/item/absolutism/coat
 	name = "Preacher Coat"
 	item_cost = 3
-	path = /obj/item/clothing/suit/neotheology_coat
+	path = /obj/item/clothing/suit/absolutism_coat
 
 /*
 	Guns: All taken from the NeoTheology Armory of the New Testament
 	All guns are 1 TC cheaper than the closest equivilant in normal traitor gear
 */
-/datum/uplink_item/item/neotheology/laser
+/datum/uplink_item/item/absolutism/laser
 	item_cost = 10
 	name = "NT LG \"Lightfall\""
 	path = /obj/item/weapon/gun/energy/laser
 
-/datum/uplink_item/item/neotheology/ion
+/datum/uplink_item/item/absolutism/ion
 	item_cost = 8
 	name = "NT IR \"Halicon\""
 	path = /obj/item/weapon/gun/energy/ionrifle
 
 
-/datum/uplink_item/item/neotheology/pulse
+/datum/uplink_item/item/absolutism/pulse
 	item_cost = 10
 	name = "NT PR \"Dominion\""
 	path = /obj/item/weapon/gun/energy/plasma
 
-/datum/uplink_item/item/neotheology/pulse_destroyer
+/datum/uplink_item/item/absolutism/pulse_destroyer
 	item_cost = 10
 	name = "NT PR \"Purger\""
 	path = /obj/item/weapon/gun/energy/plasma/destroyer
 
 
 
-/datum/uplink_item/item/neotheology/xbow
+/datum/uplink_item/item/absolutism/xbow
 	item_cost = 5
 	name = "NT EC \"Nemesis\""
 	path = /obj/item/weapon/gun/energy/crossbow
 
-/datum/uplink_item/item/neotheology/xbow_heavy
+/datum/uplink_item/item/absolutism/xbow_heavy
 	item_cost = 8
 	name = "NT EC \"Themis\""
 	path = /obj/item/weapon/gun/energy/crossbow/largecrossbow
 
 
-/datum/uplink_item/item/neotheology/sniper
+/datum/uplink_item/item/absolutism/sniper
 	item_cost = 13
 	name = "NT MER \"Valkyrie\""
 	path = /obj/item/weapon/gun/energy/sniperrifle

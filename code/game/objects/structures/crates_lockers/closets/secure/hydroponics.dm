@@ -36,13 +36,13 @@
 
 /obj/structure/closet/secure_closet/personal/agrolyte/populate_contents()
 	if(prob(25))
-		new /obj/item/weapon/storage/backpack/neotheology(src)
+		new /obj/item/weapon/storage/backpack/absolutism(src)
 	else if(prob(25))
-		new /obj/item/weapon/storage/backpack/sport/neotheology(src)
+		new /obj/item/weapon/storage/backpack/sport/absolutism(src)
 	else
-		new /obj/item/weapon/storage/backpack/satchel/neotheology(src)
+		new /obj/item/weapon/storage/backpack/satchel/absolutism(src)
 	new /obj/item/clothing/suit/apron(src)
-	new /obj/item/weapon/storage/belt/utility/neotheology(src)
+	new /obj/item/weapon/storage/belt/utility/absolutism(src)
 	new /obj/item/weapon/storage/bag/produce(src)
 	new /obj/item/clothing/under/rank/hydroponics(src)
 	new /obj/item/device/scanner/plant(src)

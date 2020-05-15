@@ -96,3 +96,50 @@
 /obj/item/clothing/head/surgery/green
 	desc = "A cap surgeons wear during operations. Keeps their hair from tickling your internal organs. This one is dark green."
 	icon_state = "surgcap_green"
+
+//Blackshield hats
+
+/obj/item/clothing/head/rank/trooper/beret
+	name = "Militia beret"
+	desc = "A faded black beret with its old SolFed badge replaced with that of the Blackshield Militia."
+	icon_state = "beret_militia"
+
+/obj/item/clothing/head/rank/trooper/cap
+	name = "Militia cap"
+	desc = "A faded black cap with the badge of the Blackshield Militia."
+	icon_state = "milsoft"
+
+/obj/item/clothing/head/rank/corpsman/cap
+	name = "Corpsman cap"
+	desc = "A faded black cap with the badge of a Medical Corpsman."
+	icon_state = "milsoft"
+
+/obj/item/clothing/head/rank/corpsman/beret
+	name = "Corpsman beret"
+	desc = "A faded black beret with the badge of a Medical Corpsman."
+	icon_state = "beret_militia"
+
+/obj/item/clothing/head/rank/armorer/cap
+	name = "Sergeant's cap"
+	desc = "A faded black cap with the badge of a Blackshield Sergeant."
+	icon_state = "milsoft"
+
+/obj/item/clothing/head/rank/armorer/beret
+	name = "Sergeant's beret"
+	desc = "A faded black beret with the badge of a Blackshield Sergeant."
+	icon_state = "beret_militia"
+
+/obj/item/clothing/head/rank/milcom/beret
+	name = "Militia Commander's beret"
+	desc = "A faded black beret with its old SolFed badge replaced with that of the Blackshield Militia Commander."
+	icon_state = "beret_militia"
+
+/obj/item/clothing/head/rank/milcom
+	name = "Militia Commander's cap"
+	desc = "A crisp peaked cap signifying the distinguished martial position of the Commander of the Blackshield Militia."
+	icon_state = "commander_cap"
+
+/obj/item/clothing/head/rank/instructor_hat
+	name = "campaign cover"
+	desc = "Mama, mama, can't you see what this Corps has done to me?"
+	icon_state = "instructor"

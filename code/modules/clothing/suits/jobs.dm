@@ -69,7 +69,7 @@
 	)
 
 //Chaplain
-/obj/item/clothing/suit/neotheology_jacket
+/obj/item/clothing/suit/absolutism_jacket
 	name = "acolyte jacket"
 	desc = "A long, lightly armoured jacket. Dark, stylish, and authoritarian."
 	icon_state = "chaplain_hoodie"
@@ -85,7 +85,7 @@
 		rad = 0
 	)
 
-/obj/item/clothing/suit/neotheology_coat
+/obj/item/clothing/suit/absolutism_coat
 	name = "preacher coat"
 	desc = "A snugly fitting, lightly armoured brown coat."
 	icon_state = "church_coat"

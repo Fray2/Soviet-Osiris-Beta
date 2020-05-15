@@ -55,7 +55,7 @@
 
 	//Secondly, cruciforms.
 	//This is handled seperately to account for the future possibility of non-humans having cruciforms. Like holy dogs!
-	if (is_neotheology_disciple(target))
+	if (is_absolutism_disciple(target))
 		//Cruciform blocks other implants
 		return FALSE
 

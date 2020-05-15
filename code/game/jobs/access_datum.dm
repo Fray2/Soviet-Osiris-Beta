@@ -37,7 +37,7 @@
 /var/const/access_moebius = 5
 /datum/access/moebius
 	id = access_moebius
-	desc = "Moebius General"
+	desc = "Soteria General"
 	region = ACCESS_REGION_RESEARCH
 
 /var/const/access_morgue = 6
@@ -127,7 +127,7 @@
 /var/const/access_captain = 20
 /datum/access/captain
 	id = access_captain
-	desc = "Captain"
+	desc = "Premier"
 	region = ACCESS_REGION_COMMAND
 
 /var/const/access_all_personal_lockers = 21
@@ -163,7 +163,7 @@
 /var/const/access_janitor = 26
 /datum/access/janitor
 	id = access_janitor
-	desc = "Janitorial Closet"
+	desc = "Custodial Closet"
 	region = ACCESS_REGION_GENERAL
 
 /var/const/access_crematorium = 27
@@ -187,7 +187,7 @@
 /var/const/access_rd = 30
 /datum/access/rd
 	id = access_rd
-	desc = "Moebius Expedition Overseer"
+	desc = "Soteria Research Overseer"
 	region = ACCESS_REGION_RESEARCH
 
 /var/const/access_cargo = 31
@@ -226,7 +226,11 @@
 	desc = "Manufacturing"
 	access_type = ACCESS_TYPE_NONE
 
-// /var/const/free_access_id = 37
+/var/const/access_medical = 37
+/datum/access/access_medical
+    id = access_medical
+    desc = "Medical Access"
+    region = ACCESS_REGION_MEDBAY
 
 // /var/const/free_access_id = 38
 
@@ -239,13 +243,13 @@
 /var/const/access_cmo = 40
 /datum/access/cmo
 	id = access_cmo
-	desc = "Moebius Biolab Officer"
+	desc = "Soteria Biolab Overseer"
 	region = ACCESS_REGION_COMMAND
 
 /var/const/access_merchant = 41
 /datum/access/merchant
 	id = access_merchant
-	desc = "Guild Merchant"
+	desc = "Chief Executive Officer"
 	region = ACCESS_REGION_SUPPLY
 
 /var/const/access_network = 42
@@ -293,12 +297,6 @@
 // /var/const/free_access_id = 51
 // /var/const/free_access_id = 52
 
-/var/const/access_co = 52
-/datum/access/co
-	id = access_co
-	desc = "Commissioner"
-	region = ACCESS_REGION_COMMAND
-
 /var/const/access_heads_vault = 53
 /datum/access/heads_vault
 	id = access_heads_vault
@@ -320,19 +318,19 @@
 /var/const/access_ce = 56
 /datum/access/ce
 	id = access_ce
-	desc = "Technomancer Exultant"
+	desc = "Guild Master"
 	region = ACCESS_REGION_ENGINEERING
 
 /var/const/access_hop = 57
 /datum/access/hop
 	id = access_hop
-	desc = "First Officer"
+	desc = "Steward"
 	region = ACCESS_REGION_COMMAND
 
 /var/const/access_hos = 58
 /datum/access/hos
 	id = access_hos
-	desc = "Ironhammer Commander"
+	desc = "Security Command"
 	region = ACCESS_REGION_SECURITY
 
 /var/const/access_RC_announce = 59 //Request console announcements
@@ -403,33 +401,57 @@
 /var/const/access_nt_disciple = 70
 /datum/access/nt_disciple
 	id = access_nt_disciple
-	desc = "NeoTheology Disciple"
+	desc = "Absolutism Vector"
 	region = ACCESS_REGION_CHURCH
 
 /var/const/access_nt_acolyte = 71
 /datum/access/nt_acolyte
 	id = access_nt_acolyte
-	desc = "NeoTheology Acolyte"
+	desc = "Absolutism Vector"
 	region = ACCESS_REGION_CHURCH
+
+/var/const/access_nt_custodian = 72
+/datum/access/nt_custodian
+	id = access_nt_custodian
+	desc = "Janitorial"
+	region = ACCESS_REGION_GENERAL
 
 /var/const/access_nt_agrolyte = 73
 /datum/access/nt_agrolyte
 	id = access_nt_agrolyte
-	desc = "NeoTheology Agrolyte"
-	region = ACCESS_REGION_CHURCH
+	desc = "Botany"
+	region = ACCESS_REGION_GENERAL
 
 /var/const/access_nt_preacher = 74
 /datum/access/nt_preacher
 	id = access_nt_preacher
-	desc = "NeoTheology Preacher"
+	desc = "Absolutism Prime"
 	region = ACCESS_REGION_CHURCH
 
 /var/const/access_nt_inquisitor = 75
 /datum/access/nt_inquisitor
 	id = access_nt_inquisitor
-	desc = "NeoTheology Inquisitor"
+	desc = "Absolutism Crusader"
 	region = ACCESS_REGION_CHURCH
 
+// /var/const/free_access_id = 76
+// /var/const/free_access_id = 77
+
+
+/**************
+* Prospectors *
+***************/
+/var/const/access_prospector = 78
+/datum/access/prospector
+	id = access_prospector
+	desc = "Prospector"
+	region = ACCESS_REGION_PROSPECTOR
+
+/var/const/access_foreman = 79 // Foreman's quarters
+/datum/access/foreman
+	id = access_foreman
+	desc = "Foreman's Quarters"
+	region = ACCESS_REGION_PROSPECTOR
 
 /******************
 * Central Command *
@@ -487,11 +509,14 @@
 	id = access_cent_captain
 	desc = "Code Gold"
 	access_type = ACCESS_TYPE_CENTCOM
+
 /var/const/access_research_equipment = 110 //RnD Console Access
 /datum/access/research_equipment
 	id = access_research_equipment
 	desc = "Research Console"
 	region = ACCESS_REGION_RESEARCH
+
+
 /***************
 * Antag access *
 ***************/

@@ -1,5 +1,5 @@
-/music_track/neotheology
+/music_track/absolutism
 	artist = "Duke Gneiss"
-	title = "Neotheology"
+	title = "Absolutism"
 	song = 'sound/music/lobby/Duke_Gneiss-Neotheology.ogg'
 	url = "https://www.youtube.com/watch?v=Opr9uLrlYtg"

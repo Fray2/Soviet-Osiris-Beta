@@ -458,7 +458,7 @@ ADMIN_VERB_ADD(/client/proc/cmd_admin_dress_old, R_FUN, FALSE)
 			M.equip_to_slot_or_del(new /obj/item/clothing/shoes/black(M), slot_shoes)
 
 			M.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/vest(M), slot_wear_suit)
-			M.equip_to_slot_or_del(new /obj/item/clothing/head/armor/helmet/thunderdome(M), slot_head)
+			M.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/thunderdome(M), slot_head)
 
 			M.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/destroyer(M), slot_r_hand)
 			M.equip_to_slot_or_del(new /obj/item/weapon/tool/knife(M), slot_l_hand)
@@ -536,7 +536,7 @@ ADMIN_VERB_ADD(/client/proc/cmd_admin_dress_old, R_FUN, FALSE)
 			M.equip_to_slot_or_del(new /obj/item/clothing/head/chaplain_hood(M), slot_head)
 			M.equip_to_slot_or_del(new /obj/item/device/radio/headset(M), slot_l_ear)
 			M.equip_to_slot_or_del(new /obj/item/clothing/glasses/powered/thermal/plain/monocle(M), slot_glasses)
-			M.equip_to_slot_or_del(new /obj/item/clothing/suit/neotheology_jacket(M), slot_wear_suit)
+			M.equip_to_slot_or_del(new /obj/item/clothing/suit/absolutism_jacket(M), slot_wear_suit)
 			M.equip_to_slot_or_del(new /obj/item/weapon/bikehorn(M), slot_r_store)
 
 			var/obj/item/weapon/card/id/W = new(M)

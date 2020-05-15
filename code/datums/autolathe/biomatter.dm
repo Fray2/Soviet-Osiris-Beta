@@ -79,9 +79,9 @@
 	name = "Utility belt"
 	build_path = /obj/item/weapon/storage/belt/utility
 
-/datum/design/bioprinter/belt/utility/neotheology
+/datum/design/bioprinter/belt/utility/absolutism
 	name = "Neotheologian utility belt"
-	build_path = /obj/item/weapon/storage/belt/utility/neotheology
+	build_path = /obj/item/weapon/storage/belt/utility/absolutism
 
 /datum/design/bioprinter/belt/medical
 	name = "Medical belt"
@@ -91,9 +91,9 @@
 	name = "Tactical belt"
 	build_path = /obj/item/weapon/storage/belt/security
 
-/datum/design/bioprinter/belt/security/neotheology
+/datum/design/bioprinter/belt/security/absolutism
 	name = "Neotheologian tactical belt"
-	build_path = /obj/item/weapon/storage/belt/security/neotheology
+	build_path = /obj/item/weapon/storage/belt/security/absolutism
 
 /datum/design/bioprinter/belt/medical/emt
 	name = "EMT belt"

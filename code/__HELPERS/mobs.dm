@@ -259,7 +259,7 @@ Proc for attack log creation, because really why not
 	return FALSE
 
 
-/proc/is_neotheology_disciple(mob/living/L)
+/proc/is_absolutism_disciple(mob/living/L)
 	if(istype(L) && L.get_core_implant(/obj/item/weapon/implant/core_implant/cruciform))
 		return TRUE
 
