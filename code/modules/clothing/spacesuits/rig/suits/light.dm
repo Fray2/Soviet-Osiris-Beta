@@ -20,7 +20,7 @@
 	drain = 2
 
 	chest_type = /obj/item/clothing/suit/space/rig/light
-	helm_type =  /obj/item/clothing/head/space/rig/light
+	helm_type =  /obj/item/clothing/head/helmet/space/rig/light
 	boot_type =  /obj/item/clothing/shoes/magboots/rig/light
 	glove_type = /obj/item/clothing/gloves/rig/light
 
@@ -33,7 +33,7 @@
 /obj/item/clothing/shoes/magboots/rig/light
 	name = "shoes"
 
-/obj/item/clothing/head/space/rig/light
+/obj/item/clothing/head/helmet/space/rig/light
 	name = "hood"
 
 /obj/item/weapon/rig/light/hacker

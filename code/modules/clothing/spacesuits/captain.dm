@@ -1,5 +1,5 @@
 //Captain's Spacesuit
-/obj/item/clothing/head/space/capspace
+/obj/item/clothing/head/helmet/space/capspace
 	name = "space helmet"
 	icon_state = "capspace"
 	item_state = "capspace"

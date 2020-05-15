@@ -1,4 +1,4 @@
-/obj/item/clothing/head/space/void/excelsior
+/obj/item/clothing/head/helmet/space/void/excelsior
 	name = "Excelsior helmet"
 	desc = "A deceptively well armored space helmet. Ancient design, but advanced manufacturing."
 	icon_state = "cosmo"
@@ -48,4 +48,4 @@
 		MATERIAL_STEEL = 10,
 		MATERIAL_PLASTEEL = 5
 	)
-	helmet = /obj/item/clothing/head/space/void/excelsior
+	helmet = /obj/item/clothing/head/helmet/space/void/excelsior

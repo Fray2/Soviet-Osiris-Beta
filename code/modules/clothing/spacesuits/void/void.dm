@@ -1,5 +1,5 @@
 //NASA Voidsuit
-/obj/item/clothing/head/space/void
+/obj/item/clothing/head/helmet/space/void
 	name = "void helmet"
 	desc = "A high-tech dark red space suit helmet. Used for AI satellite maintenance."
 	icon_state = "void"
@@ -41,7 +41,7 @@
 
 	//Inbuilt devices.
 	var/obj/item/clothing/shoes/magboots/boots = null // Deployable boots, if any.
-	var/obj/item/clothing/head/armor/helmet/helmet = /obj/item/clothing/head/space/void   // Deployable helmet, if any.
+	var/obj/item/clothing/head/armor/helmet/helmet = /obj/item/clothing/head/helmet/space/void   // Deployable helmet, if any.
 	var/obj/item/weapon/tank/tank = null              // Deployable tank, if any.
 
 /obj/item/clothing/suit/space/void/Initialize()
