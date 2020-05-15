@@ -47,7 +47,7 @@
 	var/antaghud_indicator	  // Icon used for the antaghud
 	var/list/uplinks = list()
 	var/only_human = TRUE
-	var/allow_neotheology = TRUE //If false, followers of neotheology cannot become this antag
+	var/allow_absolutism = TRUE //If false, followers of absolutism cannot become this antag
 
 /datum/antagonist/New()
 	..()

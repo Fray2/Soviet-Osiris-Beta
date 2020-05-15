@@ -277,7 +277,7 @@
 // NeoTheology
 /obj/item/weapon/computer_hardware/hard_drive/portable/design/nt_bioprinter
 	disk_name = "NeoTheology Bioprinter Production"
-	icon_state = "neotheology"
+	icon_state = "absolutism"
 
 	license = -1
 	designs = list(
@@ -295,10 +295,10 @@
 		/datum/design/bioprinter/leather/leather_jacket,
 		/datum/design/bioprinter/leather/cash_bag,
 		/datum/design/bioprinter/belt/utility,
-		/datum/design/bioprinter/belt/utility/neotheology,
+		/datum/design/bioprinter/belt/utility/absolutism,
 		/datum/design/bioprinter/belt/medical,
 		/datum/design/bioprinter/belt/security,
-		/datum/design/bioprinter/belt/security/neotheology,
+		/datum/design/bioprinter/belt/security/absolutism,
 		/datum/design/bioprinter/belt/medical/emt,
 		/datum/design/bioprinter/belt/misc/champion,
 
@@ -319,7 +319,7 @@
 // Same as the other NT disk, minus the medical designs and encryption key. Should spawn in public access bioprinters if they get added by any chance.
 /obj/item/weapon/computer_hardware/hard_drive/portable/design/nt_bioprinter_public
 	disk_name = "NeoTheology Bioprinter Pack"
-	icon_state = "neotheology"
+	icon_state = "absolutism"
 
 	license = -1
 	designs = list(
@@ -336,10 +336,10 @@
 		/datum/design/bioprinter/leather/leather_jacket,
 		/datum/design/bioprinter/leather/cash_bag,
 		/datum/design/bioprinter/belt/utility,
-		/datum/design/bioprinter/belt/utility/neotheology,
+		/datum/design/bioprinter/belt/utility/absolutism,
 		/datum/design/bioprinter/belt/medical,
 		/datum/design/bioprinter/belt/security,
-		/datum/design/bioprinter/belt/security/neotheology,
+		/datum/design/bioprinter/belt/security/absolutism,
 		/datum/design/bioprinter/belt/medical/emt,
 		/datum/design/bioprinter/belt/misc/champion,
 
@@ -353,7 +353,7 @@
 
 /obj/item/weapon/computer_hardware/hard_drive/portable/design/nt_boards
 	disk_name = "NeoTheology Circuit Pack"
-	icon_state = "neotheology"
+	icon_state = "absolutism"
 
 	license = -1
 	designs = list(
@@ -611,7 +611,7 @@
 
 /obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/nt_mk58
 	disk_name = "NeoTheology Armory - .35 MK58 Handgun Pack"
-	icon_state = "neotheology"
+	icon_state = "absolutism"
 
 	license = 12
 	designs = list(
@@ -741,7 +741,7 @@
 
 /obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/nt_regulator
 	disk_name = "NeoTheology Armory - .50 Regulator Shotgun"
-	icon_state = "neotheology"
+	icon_state = "absolutism"
 
 	license = 12
 	designs = list(
@@ -919,7 +919,7 @@
 
 /obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/nt_heavysniper
 	disk_name = "NeoTheology Armory - .60 Penetrator AMR"
-	icon_state = "neotheology"
+	icon_state = "absolutism"
 
 	license = 12
 	designs = list(
@@ -943,7 +943,7 @@
 
 /obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/nt_protector
 	disk_name = "NeoTheology Armory - Protector Grenade Launcher"
-	icon_state = "neotheology"
+	icon_state = "absolutism"
 
 	license = 15
 	designs = list(
@@ -963,7 +963,7 @@
 
 /obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/nt_counselor
 	disk_name = "NeoTheology Armory - Councelor PDW E"
-	icon_state = "neotheology"
+	icon_state = "absolutism"
 
 	license = 12
 	designs = list(
@@ -995,7 +995,7 @@
 
 /obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/nt_nemesis
 	disk_name = "NeoTheology Armory - Nemesis Energy Crossbow"
-	icon_state = "neotheology"
+	icon_state = "absolutism"
 
 	license = 8
 	designs = list(
@@ -1004,7 +1004,7 @@
 
 /obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/nt_themis
 	disk_name = "NeoTheology Armory - Themis Energy Crossbow"
-	icon_state = "neotheology"
+	icon_state = "absolutism"
 
 	license = 8
 	designs = list(
@@ -1013,7 +1013,7 @@
 
 /obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/nt_lightfall
 	disk_name = "NeoTheology Armory - Lightfall Laser Gun"
-	icon_state = "neotheology"
+	icon_state = "absolutism"
 
 	license = 12
 	designs = list(
@@ -1023,7 +1023,7 @@
 
 /obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/nt_valkirye
 	disk_name = "NeoTheology Armory - Valkyrie Energy Rifle"
-	icon_state = "neotheology"
+	icon_state = "absolutism"
 
 	license = 12
 	designs = list(
@@ -1033,7 +1033,7 @@
 
 /obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/nt_halicon
 	disk_name = "NeoTheology Armory - Halicon Ion Rifle"
-	icon_state = "neotheology"
+	icon_state = "absolutism"
 
 	license = 12
 	designs = list(
@@ -1045,7 +1045,7 @@
 
 /obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/nt_dominion
 	disk_name = "NeoTheology Armory - Dominion Plasma Rifle"
-	icon_state = "neotheology"
+	icon_state = "absolutism"
 
 	license = 12
 	designs = list(
@@ -1055,7 +1055,7 @@
 
 /obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/nt_purger
 	disk_name = "NeoTheology Armory - Purger Plasma Rifle"
-	icon_state = "neotheology"
+	icon_state = "absolutism"
 
 	license = 12
 	designs = list(

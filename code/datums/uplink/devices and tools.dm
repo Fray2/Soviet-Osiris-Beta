@@ -41,12 +41,12 @@
 	name = "Heavy Armor Vest"
 	item_cost = 6
 	path = /obj/item/clothing/suit/storage/vest/merc
-
+/*
 /datum/uplink_item/item/tools/heavy_helmet
 	name = "Heavy Armor Helmet"
 	item_cost = 4
-	path = /obj/item/clothing/head/armor/helmet/merchelm
-
+	path = /obj/item/clothing/head/helmet/merchelm
+*/
 /datum/uplink_item/item/tools/encryptionkey_radio
 	name = "Encrypted Radio Channel Key"
 	item_cost = 4

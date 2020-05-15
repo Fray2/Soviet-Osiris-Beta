@@ -107,8 +107,15 @@
 	icon_state = "goldbadge"
 	slot_flags = SLOT_ACCESSORY_BUFFER
 
+/obj/item/clothing/accessory/badge/smc
+	name = "Militia Commander's badge"
+	desc = "An immaculately polished gold Militia Commander badge."
+	icon_state = "goldbadge"
+	badge_string = "Blackshield"
+	slot_flags = SLOT_ACCESSORY_BUFFER
+
 /obj/item/clothing/accessory/badge/marshal
-	name = "Marshal's badge"
-	desc = "A leather-backed gold badge displaying the crest of the Ironhammer Marshals."
+	name = "commando's badge"
+	desc = "A leather-backed gold badge displaying the crest of the Brigadier, signifying the wearer as one of the brigadier's agents."
 	icon_state = "marshalbadge"
-	badge_string = "Ironhammer Marshal Bureau"
+	badge_string = "Brigadier's Commando"

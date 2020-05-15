@@ -543,7 +543,7 @@
 		new /obj/item/weapon/computer_hardware/hard_drive/portable/basic(src)
 
 /obj/item/weapon/storage/box/headset/church
-	name = "neotheology radio encryption key box"
+	name = "absolutism radio encryption key box"
 	illustration = "disk"
 
 /obj/item/weapon/storage/box/headset/church/populate_contents()

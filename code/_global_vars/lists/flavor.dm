@@ -23,7 +23,7 @@ GLOBAL_LIST_INIT(music_tracks, list(
 	"O.W.L." = /music_track/owl,
 	"Intruder" = /music_track/intruder,
 	"The Runner in Motion" = /music_track/runner,
-	"Neotheology" = /music_track/neotheology,
+	"Absolutism" = /music_track/absolutism,
 	"Downtown" = /music_track/downtown,
 	"Steel Rain" = /music_track/steel_rain,
 	"Our Legacy" = /music_track/our_legacy,

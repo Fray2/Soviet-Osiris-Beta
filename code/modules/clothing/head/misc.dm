@@ -142,6 +142,20 @@
 	desc = "Yarr."
 	icon_state = "bandana"
 
+/obj/item/clothing/head/bandana/orange //themij: Taryn Kifer
+	name = "orange bandana"
+	desc = "An orange bandana fashioned from a piece of cloth."
+	icon_state = "orange_bandana"
+	body_parts_covered = 0
+
+/obj/item/clothing/head/bandana/green
+	name = "green bandana"
+	desc = "A green bandana fashioned from a piece of cloth."
+	icon_state = "greenbandana"
+	item_state = "greenbandana"
+	flags_inv = 0
+	body_parts_covered = 0
+
 /obj/item/clothing/head/bowler
 	name = "bowler-hat"
 	desc = "Gentleman, elite aboard!"
@@ -166,11 +180,6 @@
 	icon_state = "boater_hat"
 	desc = "The ultimate in summer fashion."
 
-/obj/item/clothing/head/fedora
-	name = "fedora"
-	icon_state = "fedora"
-	desc = "A sharp, stylish hat."
-
 /obj/item/clothing/head/feathertrilby
 	name = "feather trilby"
 	icon_state = "feather_trilby"
@@ -180,6 +189,82 @@
 	name = "fez"
 	icon_state = "fez"
 	desc = "You should wear a fez. Fezzes are cool."
+
+/*Fedoras*/
+
+/obj/item/clothing/head/fedora
+	name = "black fedora"
+	icon_state = "fedora"
+	desc = "A black felt fedora with a sharp brim."
+
+/obj/item/clothing/head/fedora/brown
+	name = "brown fedora"
+	icon_state = "detectiveold"
+	desc = "A soft brown felt fedora."
+
+/obj/item/clothing/head/fedora/grey
+	name = "grey fedora"
+	icon_state = "detective2"
+	desc = "A soft grey felt fedora."
+
+/obj/item/clothing/head/fedora/feathered
+	name = "feather fedora"
+	icon_state = "feather_trilby"
+	desc = "A dark blue felt fedora with a classy white feather."
+
+/*Cowboy Hats*/
+
+/obj/item/clothing/head/cowboy
+	name = "rancher cowboy hat"
+	icon_state = "cowboyrancher"
+	desc = "A straw cowboy hat with a high tipped brim."
+
+/obj/item/clothing/head/cowboy/desperado
+	name = "desperado cowboy hat"
+	icon_state = "cowboydesperado"
+	desc = "A black leather cowboy hat with a tipped brim."
+
+/obj/item/clothing/head/cowboy/journeyman
+	name = "journeyman cowboy hat"
+	icon_state = "cowboygambler"
+	desc = "A brown straw cowboy hat with a weathered shape."
+
+/obj/item/clothing/head/cowboy/marshal
+	name = "marshal cowboy hat"
+	icon_state = "cowboymarshal"
+	desc = "A brown felt cowboy hat with a long flat brim."
+
+/obj/item/clothing/head/cowboy/shootist
+	name = "shootist cowboy hat"
+	icon_state = "cowboyshootist"
+	desc = "A black leather cowboy hat with a long flat brim."
+
+/obj/item/clothing/head/cowboy/wrangler
+	name = "wrangler cowboy hat"
+	desc = "A tan felt cowboy hat with a high tipped brim."
+	icon_state = "cowboyhat"
+	body_parts_covered = 0
+
+/obj/item/clothing/head/cowboy/bandit
+	name = "bandit cowboy hat"
+	desc = "A black leather cowboy hat with a long tipped brim."
+	icon_state = "cowboy_black"
+
+/obj/item/clothing/head/cowboy/longhorn
+	name = "longhorn cowboy hat"
+	desc = "A brown felt cowboy hat with a very long brim."
+	icon_state = "cowboy_wide"
+
+/obj/item/clothing/head/cowboy/greenhorn
+	name = "greenhorn cowboy hat"
+	desc = "A small brown felt cowboy hat for tiny gunslingers."
+	icon_state = "cowboy_small"
+
+/obj/item/clothing/head/cowboy/frontiersman
+	name = "frontiersman cowboy hat"
+	desc = "A rugged dark felt hat worn with a green leather hood."
+	icon_state = "stormchaser"
+
 
 //end bs12 hats
 
@@ -247,3 +332,10 @@
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EARS
 	siemens_coefficient = 1
+
+/obj/item/clothing/head/turban
+	name = "turban"
+	desc = "A cloth designed to be worn around the head."
+	icon_state = "turban"
+	body_parts_covered = 0
+	flags_inv = BLOCKHAIR

@@ -172,10 +172,10 @@
 	desc = "Done in a complementing shade for IronHammer Security forces, a staple for military contractors everywhere."
 	icon_state = "backpack_ironhammer"
 
-/obj/item/weapon/storage/backpack/neotheology
+/obj/item/weapon/storage/backpack/absolutism
 	name = "cruciformed backpack"
 	desc = "For carrying all your holy needs."
-	icon_state = "backpack_neotheology"
+	icon_state = "backpack_absolutism"
 
 //Used by mercenaries
 /obj/item/weapon/storage/backpack/military
@@ -223,10 +223,10 @@
 	desc = "Done in a complementing shade for IronHammer Security forces. It looks as if it belongs on a kindergartener rather than a operative, which is why in actuality this style makes perfect sense."
 	icon_state = "backsport_ironhammer"
 
-/obj/item/weapon/storage/backpack/sport/neotheology
+/obj/item/weapon/storage/backpack/sport/absolutism
 	name = "cruciformed sport backpack"
 	desc = "For carrying all your holy needs."
-	icon_state = "backsport_neotheology"
+	icon_state = "backsport_absolutism"
 
 /*
  * Satchel Types
@@ -313,10 +313,10 @@
 	desc = "Done in a complementing shade for IronHammer Security forces, for the itinerant military contractor."
 	icon_state = "satchel_ironhammer"
 
-/obj/item/weapon/storage/backpack/satchel/neotheology
+/obj/item/weapon/storage/backpack/satchel/absolutism
 	name = "cruciformed satchel"
 	desc = "Slightly more accessible means for your holy goods."
-	icon_state = "satchel_neotheology"
+	icon_state = "satchel_absolutism"
 
 //Used by mercenaries
 /obj/item/weapon/storage/backpack/satchel/military

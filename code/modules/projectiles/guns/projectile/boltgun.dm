@@ -99,3 +99,33 @@
 	recoil_buildup = 0.4 // Double the excel variant
 	matter = list(MATERIAL_STEEL = 20, MATERIAL_WOOD = 10)
 	wielded_item_state = "_doble_wood"
+
+/obj/item/weapon/gun/projectile/boltgun/sa
+	name = "\"Novakovic\" boltgun"
+	desc = "Weapon for hunting, or endless trench warfare. \
+			If you're on a budget, it's a darn good rifle for just about everything. \
+			This copy, in fact, is a reverse-engineered poor-quality copy of a more perfect copy of an ancient rifle"
+	icon = 'icons/obj/guns/projectile/boltgun_wood.dmi'
+	icon_state = "boltgun"
+	item_state = "boltgun"
+	max_shells = 5
+	price_tag = 300
+	recoil_buildup = 40
+	matter = list(MATERIAL_STEEL = 20, MATERIAL_WOOD = 10)
+
+/obj/item/weapon/gun/projectile/boltgun/scout
+	name = "\"Scout\" heavy boltgun"
+	desc = "Weapon for hunting, sniping, and competition shooting. Chambered in .408 Heavy Rifle rounds, it packs the reach and accuracy for every occasion."
+	icon = 'icons/obj/guns/projectile/heavyboltgun.dmi'
+	icon_state = "boltgun"
+	item_state = "boltgun"
+	force = WEAPON_FORCE_PAINFUL
+	damage_multiplier = 1.6
+	penetration_multiplier  = 1.6
+	recoil_buildup = 50
+	max_shells = 5
+	zoom_factor = 2.0
+	price_tag = 3000
+	load_method = SINGLE_CASING
+	one_hand_penalty = 50 //No trick shots
+	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_PLASTIC = 10, MATERIAL_GLASS = 10)

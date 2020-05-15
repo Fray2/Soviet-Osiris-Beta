@@ -33,19 +33,29 @@
 
 /obj/item/clothing/suit/armor/vest/detective
 	name = "armor"
-	desc = "An armored vest with a detective's badge on it."
+	desc = "An armored vest with a ranger's badge on it."
 	icon_state = "armor_detective"
 
-/obj/item/clothing/suit/armor/vest/warden
-	name = "Warden's jacket"
-	desc = "An armoured jacket with an attached vest holding a badge and livery."
-	icon_state = "warden_jacket"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
-	price_tag = 350
+/obj/item/clothing/suit/storage/rank/key_coat
+	name = "shearling coat"
+	desc = "A dark shearling coat When you're not performing your duties do they keep you in a little box? Cells."
+	icon_state = "key_coat"
+	item_state = "key_coat"
+	blood_overlay_type = "coat"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
+	armor = list(
+		melee = 35,
+		bullet = 75,
+		energy = 35,
+		bomb = 0,
+		bio = 0,
+		rad = 0
+	)
+	price_tag = 750
 
 /obj/item/clothing/suit/armor/vest/ironhammer
-	name = "operator armor"
-	desc = "An armored vest that protects against some damage. This one has been done in Ironhammer Security colors. Not designed for serious operations."
+	name = "security armor"
+	desc = "An armored vest that protects against some damage. This one has been done in marshal security colors. Not designed for serious operations."
 	icon_state = "armor_ironhammer"
 
 /obj/item/clothing/suit/armor/vest/handmade
@@ -62,51 +72,32 @@
 	)
 	price_tag = 150
 
-/obj/item/clothing/suit/armor/greatcoat
-	name = "armored coat"
-	desc = "A greatcoat enhanced with a special alloy for some protection and style."
-	icon_state = "greatcoat"
-	item_state = "hos"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
-	armor = list(
-		melee = 30,
-		bullet = 35,
-		energy = 30,
-		bomb = 15,
-		bio = 0,
-		rad = 0
-	)
-	price_tag = 600
+/obj/item/clothing/suit/armor/vest/botanist
+	name = "botanist attire"
+	desc = "Every rose has its thorns."
+	icon_state = "botanist"
+	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	armor = list(melee = 35, bullet = 20, energy = 20, bomb = 25, bio = 100, rad = 80)
+	flags_inv = HIDEJUMPSUIT
 
-/obj/item/clothing/suit/armor/greatcoat/ironhammer
-	icon_state = "greatcoat_ironhammer"
+/obj/item/clothing/suit/armor/vest/acolyte
+	name = "vector armor"
+	desc = "Worn, heavy, steadfast in the name of God."
+	icon_state = "acolyte"
+	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	armor = list(melee = 35, bullet = 20, energy = 20, bomb = 25, bio = 100, rad = 80)
+	flags_inv = HIDEJUMPSUIT
 
-/obj/item/clothing/suit/armor/greatcoat/serbian_overcoat
-	name = "black serbian overcoat"
-	desc = "A black serbian overcoat with armor-weave and rank epaulettes"
-	icon_state = "overcoat_black"
-	item_state = "overcoat_black"
-
-// Serbian flak vests
-/obj/item/clothing/suit/armor/flak
-	name = "black flakvest vest"
-	desc = "An armored vest that protects against high-velocity solid projectiles."
-	icon_state = "flakvest"
-	item_state = "armor"
-	blood_overlay_type = "armor"
-	armor = list(
-		melee = 35,
-		bullet = 35,
-		energy = 0,
-		bomb = 20,
-		bio = 0,
-		rad = 0
-	)
-
-/obj/item/clothing/suit/armor/flak/green
-	name = "green flakvest vest"
-	icon_state = "flakvest_green"
-
+/obj/item/clothing/suit/armor/vest/custodian
+	name = "custodian armor"
+	desc = "Someone's gotta clean this mess."
+	icon_state = "custodian"
+	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	armor = list(melee = 35, bullet = 20, energy = 20, bomb = 25, bio = 100, rad = 80)
+	flags_inv = HIDEJUMPSUIT
 
 /obj/item/clothing/suit/armor/bulletproof
 	name = "bulletproof vest"
@@ -114,10 +105,10 @@
 	icon_state = "bulletproof"
 	item_state = "armor"
 	blood_overlay_type = "armor"
-	slowdown = 0.15
+	slowdown = 0.5
 	armor = list(
 		melee = 25,
-		bullet = 55,
+		bullet = 75,
 		energy = 25,
 		bomb = 10,
 		bio = 0,
@@ -126,40 +117,7 @@
 	price_tag = 500
 
 /obj/item/clothing/suit/armor/bulletproof/ironhammer
-	name = "full bulletproof suit"
-	desc = "A vest with hand and arm-guards attached that excels in protecting the wearer against high-velocity solid projectiles. \
-			This one has been done in Ironhammer Security colors."
 	icon_state = "bulletproof_ironhammer"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	armor = list(
-		melee = 25,
-		bullet = 60,
-		energy = 25,
-		bomb = 10,
-		bio = 0,
-		rad = 0
-	)
-
-/obj/item/clothing/suit/armor/bulletproof/serbian
-	name = "black platecarrier vest"
-	icon_state = "platecarrier"
-	armor = list(
-		melee = 25,
-		bullet = 50,
-		energy = 0,
-		bomb = 0,
-		bio = 0,
-		rad = 0
-	)
-	price_tag = 400
-
-/obj/item/clothing/suit/armor/bulletproof/serbian/green
-	name = "green platecarrier vest"
-	icon_state = "platecarrier_green"
-
-/obj/item/clothing/suit/armor/bulletproof/serbian/tan
-	name = "tan platecarrier vest"
-	icon_state = "platecarrier_tan"
 
 /obj/item/clothing/suit/armor/laserproof
 	name = "ablative armor vest"
@@ -167,7 +125,7 @@
 	icon_state = "ablative"
 	item_state = "ablative"
 	blood_overlay_type = "armor"
-	slowdown = 0.15
+	slowdown = 0.5
 	armor = list(
 		melee = 25,
 		bullet = 25,
@@ -179,7 +137,7 @@
 	siemens_coefficient = 0
 	price_tag = 650
 
-/obj/item/clothing/suit/armor/laserproof/handle_shield(mob/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack") //TODO: Refactor this all into humandefense
+/obj/item/clothing/suit/armor/laserproof/handle_shield(mob/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
 	if(istype(damage_source, /obj/item/projectile/energy) || istype(damage_source, /obj/item/projectile/beam))
 		var/obj/item/projectile/P = damage_source
 
@@ -199,6 +157,8 @@
 
 			return PROJECTILE_CONTINUE // complete projectile permutation
 
+/obj/item/clothing/suit/armor/laserproof/ironhammer
+	icon_state = "ablative_ironhammer"
 
 /*
  * Heavy Armor Types
@@ -216,7 +176,7 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	slowdown = 0.6
+	slowdown = 0.7
 	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
 	armor = list(
 		melee = 35,
@@ -249,7 +209,7 @@
 	desc = "A suit of armor with heavy padding to protect against melee attacks. Looks like it might impair movement."
 	icon_state = "riot"
 	item_state = "swat_suit"
-	flags_inv = NONE
+	flags_inv = HIDEJUMPSUIT
 	armor = list(
 		melee = 75,
 		bullet = 25,
@@ -263,7 +223,6 @@
 /obj/item/clothing/suit/armor/heavy/riot/ironhammer
 	icon_state = "riot_ironhammer"
 	item_state = "swat_suit"
-	flags_inv = HIDEJUMPSUIT
 
 /*
  * Storage Types
@@ -284,11 +243,126 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	item_flags = DRAG_AND_DROP_UNEQUIP|EQUIP_SOUNDS|THICKMATERIAL
 
-	cold_protection = UPPER_TORSO|LOWER_TORSO
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
-	heat_protection = UPPER_TORSO|LOWER_TORSO
-	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
-	siemens_coefficient = 0.6
+//Blackshield armor
+/obj/item/clothing/suit/armor/platecarrier
+	name = "plate carrier"
+	desc = "An armored vest carrying trauma plates and light ballistic meshes."
+	icon_state = "platecarrier"
+	item_state = "platecarrier"
+	blood_overlay_type = "armor"
+	armor = list(melee = 35, bullet = 60, energy = 15, bomb = 10, bio = 0, rad = 0)
+
+/obj/item/clothing/suit/armor/platecarrier/ih
+	name = "plate carrier"
+	desc = "An armored vest carrying trauma plates and light ballistic meshes, in security colors."
+	icon_state = "platecarrier_ih"
+	item_state = "platecarrier_ih"
+
+/obj/item/clothing/suit/armor/platecarrier/militia
+	name = "militia plate carrier"
+	desc = "An armored vest carrying trauma plates and light ballistic meshes, this one ears the distinct IFF stripes of the Blackshield Militia."
+	icon_state = "platecarrier_mil"
+	item_state = "platecarrier_mil"
+
+/obj/item/clothing/suit/armor/platecarrier/corpsman
+	name = "Corpsman plate carrier"
+	desc = "An armored vest carrying trauma plates and light ballistic meshes, this one is marked with corpsman liverly and has a stain resistant coating."
+	icon_state = "platecarrier_corpsman"
+	item_state = "platecarrier_corpsman"
+	armor = list(melee = 35, bullet = 50, energy = 15, bomb = 10, bio = 20, rad = 0)
+
+obj/item/clothing/suit/armor/platecarrier/green
+	name = "green plate carrier"
+	desc = "An armored vest carrying trauma plates and light ballistic meshes, this one suits wooded areas well."
+	icon_state = "platecarrier_green"
+	item_state = "platecarrier_green"
+
+obj/item/clothing/suit/armor/platecarrier/tan
+	name = "tan plate carrier"
+	desc = "An armored vest carrying trauma plates and light ballistic meshes, this one suits endless desert warfare well."
+	icon_state = "platecarrier_tan"
+	item_state = "platecarrier_tan"
+
+/obj/item/clothing/suit/armor/platecarrier/hos
+	name = "advanced plate carrier"
+	desc = "An armored vest carrying military grade trauma plates and advanced ballistic meshes."
+	icon_state = "platecarrier_ih"
+	item_state = "platecarrier_ih"
+	blood_overlay_type = "armor"
+	slowdown = 0.15
+	armor = list(melee = 40, bullet = 60, energy = 20, bomb = 10, bio = 0, rad = 0)
+
+
+obj/item/clothing/suit/armor/flackvest
+	name = "flak vest"
+	desc = "An armored, padded vest meant for heavy-duty operations. Heavy and bulky, it protects well against explosives and shrapnel."
+	icon_state = "flakvest"
+	item_state = "flakvest"
+	blood_overlay_type = "armor"
+	slowdown = 0.5
+	armor = list(melee = 40, bullet = 50, energy = 20, bomb = 50, bio = 0, rad = 0)
+
+obj/item/clothing/suit/armor/flackvest/militia
+	name = "militia flak vest"
+	desc = "An armored, padded vest meant for heavy-duty operations. Heavy and bulky, it protects well against explosives and shrapnel. \
+			This one is marked with the distinct IFF stripes of the Blackshield Militia."
+	icon_state = "flakvest_mil"
+	item_state = "flakvest_mil"
+
+obj/item/clothing/suit/armor/flackvest/green
+	name = "flak vest"
+	desc = "An armored, padded vest meant for heavy-duty operations.\
+			Some folks are born made to wave the flag."
+	icon_state = "flakvest_green"
+	item_state = "flakvest_green"
+
+obj/item/clothing/suit/armor/flackvest/commander
+	name = "commander's flak vest"
+	desc = "An armored, padded vest that's seen many long tours and is suited for heavy-duty operations. Heavy and bulky, it protects well against explosives and shrapnel. Smells of napalm and the sea."
+	icon_state = "flakvest_green"
+	item_state = "flakvest_green"
+	blood_overlay_type = "armor"
+	slowdown = 0.2
+	armor = list(melee = 50, bullet = 60, energy = 30, bomb = 50, bio = 0, rad = 0)
+
+obj/item/clothing/suit/armor/commander
+	name = "commander's armored coat"
+	desc = "A heavily armored combination of menacing style and cutting-edge body armor."
+	icon_state = "commander"
+	item_state = "commander"
+	blood_overlay_type = "coat"
+	permeability_coefficient = 0.50
+	armor = list(melee = 50, bullet = 50, energy = 25, bomb = 30, bio = 0, rad = 0)
+	body_parts_covered = UPPER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|ARMS
+	min_cold_protection_temperature = T0C - 20
+	siemens_coefficient = 0.7
+
+obj/item/clothing/suit/armor/commander/militia
+	name = "militia commander's armored coat"
+	desc = "A heavily armored combination of menacing style and cutting-edge body armor wearing the insignia and stripes of the Blackshield Militia Commander.."
+	icon_state = "commander_mil"
+	item_state = "commander_mil"
+
+obj/item/clothing/suit/armor/commander/militia_overcoat
+	name = "blackshield milita armored overcoat"
+	desc = "Blackshield Milita greatcoat with kevlar weave and rank epaulettes. Worn in cold environments, guard duty or formal events."
+	icon_state = "overcoat_bm"
+	item_state = "overcoat_bm"
+
+obj/item/clothing/suit/armor/commander/marshal_coat
+	name= "marshal officers greatcoat"
+	desc= "marshal officer greatcoat with armor weave. Part of the formal uniform of the security marshals."
+	icon_state = "marshal_coat"
+	item_state = "marshal_coat"
+
+obj/item/clothing/suit/armor/commander/marshal_coat_ss
+	name= "supply specialist's greatcoat"
+	desc= "supply specialist's greatcoat with armor weave. Part of the formal uniform of the security marshals."
+	icon_state = "marshal_coat_ss"
+	item_state = "marshal_coat_ss"
+
+//Reactive armor
 
 //Provides the protection of a merc voidsuit, but only covers the chest/groin, and also takes up a suit slot. In exchange it has no slowdown and provides storage.
 /obj/item/clothing/suit/storage/vest/merc
@@ -297,9 +371,9 @@
 	icon_state = "mercwebvest"
 	item_state = "mercwebvest"
 	armor = list(
-		melee = 55,
-		bullet = 55,
-		energy = 55,
+		melee = 35,
+		bullet = 35,
+		energy = 35,
 		bomb = 25,
 		bio = 0,
 		rad = 0
@@ -323,7 +397,7 @@
 		bomb = 0,
 		bio = 0,
 		rad = 0
-	)
+		)
 
 /obj/item/clothing/suit/armor/reactive/handle_shield(mob/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
 	if(prob(50))

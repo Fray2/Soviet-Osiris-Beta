@@ -45,7 +45,7 @@
 
 
 //Pods
-
+/*
 /datum/shuttle/autodock/ferry/escape_pod/erispod/escape_pod1
 	warmup_time = 10
 	shuttle_area = /area/shuttle/escape_pod1/station
@@ -67,8 +67,8 @@
 	number = 2
 /obj/effect/shuttle_landmark/escape_pod/transit/pod2
 	number = 2
-
-
+*/
+/*
 /datum/shuttle/autodock/overmap/exploration_shuttle
 	name = "Vasiliy Dokuchaev"
 	move_time = 50
@@ -90,10 +90,10 @@
 	name = "In transit"
 	landmark_tag = "nav_transit_expl"
 	base_turf = /turf/space
+*/
 
 
-
-
+/*
 /datum/shuttle/autodock/overmap/hulk
 	name = "Hulk"
 	move_time = 60
@@ -115,7 +115,7 @@
 	name = "In transit"
 	landmark_tag = "nav_transit_hulk"
 	base_turf = /turf/space
-
+*/
 //Skipjack
 //antag Shuttles disabled by nanako, 2018-09-15
 //These shuttles are created with a subtypesof loop at runtime. Starting points for the skipjack and merc shuttle are not currentl mapped in
@@ -133,7 +133,7 @@
 	dock_target = "skipjack_shuttle"
 	current_location = "nav_skipjack_start"
 	landmark_transition = "nav_skipjack_transition"
-	announcer = "CEV Eris Sensor Array"
+	announcer = "Nadezhda Colony Sensor Array"
 	home_waypoint = "nav_skipjack_start"
 	arrival_message = "Attention, vessel detected entering vessel proximity."
 	departure_message = "Attention, vessel detected leaving vessel proximity."
@@ -182,15 +182,16 @@
 	default_docking_controller = "merc_shuttle"
 	current_location = "nav_merc_start"
 	landmark_transition = "nav_merc_transition"
-	announcer = "CEV Eris Sensor Array"
+	announcer = "Nadezhda Colony Sensor Array"
 	home_waypoint = "nav_merc_start"
 	arrival_message = "Attention, unidentified vessel detected on long range sensors. \nVessel is approaching on an intercept course. \nHailing frequencies open."
 	departure_message = "Attention, unknown vessel has departed"
 
+/*
 //This fires, and the mission timer starts ticking, as soon as they leave Eris on course to the mercenary base
 /datum/shuttle/autodock/multi/antag/mercenary/announce_departure()
 	.=..()
-	var/datum/faction/F = get_faction_by_id(FACTION_SERBS)
+	var/datum/antag_faction/F = get_faction_by_id(FACTION_SERBS)
 	var/datum/objective/timed/merc/MO = (locate(/datum/objective/timed/merc) in F.objectives)
 	if (MO)
 		MO.end_mission()
@@ -198,10 +199,11 @@
 //This fires, and the mission timer starts ticking, as soon as they leave base
 /datum/shuttle/autodock/multi/antag/mercenary/announce_arrival()
 	.=..()
-	var/datum/faction/F = get_faction_by_id(FACTION_SERBS)
+	var/datum/antag_faction/F = get_faction_by_id(FACTION_SERBS)
 	var/datum/objective/timed/merc/MO = (locate(/datum/objective/timed/merc) in F.objectives)
 	if (MO)
 		MO.start_mission()
+*/
 
 //Docking controller chooses which of our airlocks should open onto the target location.
 //Merc ship has only one airlock, so set that here

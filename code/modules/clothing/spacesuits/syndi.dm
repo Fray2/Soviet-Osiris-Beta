@@ -1,5 +1,5 @@
 //Regular syndicate space suit
-/obj/item/clothing/head/space/syndicate
+/obj/item/clothing/head/helmet/space/syndicate
 	name = "red space helmet"
 	icon_state = "syndicate"
 	item_state = "syndicate"

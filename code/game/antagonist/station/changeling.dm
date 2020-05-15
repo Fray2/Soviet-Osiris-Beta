@@ -15,7 +15,7 @@
 	)
 
 	survive_objective = /datum/objective/escape
-	allow_neotheology = FALSE
+	allow_absolutism = FALSE
 
 	stat_modifiers = list(
 		STAT_TGH = 5,

@@ -1,18 +1,18 @@
-/obj/item/clothing/head/space/rig/industrial
+/obj/item/clothing/head/helmet/space/rig/industrial
 	camera_networks = list(NETWORK_MINE)
 
-/obj/item/clothing/head/space/rig/ce
+/obj/item/clothing/head/helmet/space/rig/ce
 	camera_networks = list(NETWORK_ENGINEERING)
 
-/obj/item/clothing/head/space/rig/eva
+/obj/item/clothing/head/helmet/space/rig/eva
 	light_overlay = "helmet_light_dual"
 	camera_networks = list(NETWORK_ENGINEERING)
 
-/obj/item/clothing/head/space/rig/hazmat
+/obj/item/clothing/head/helmet/space/rig/hazmat
 	light_overlay = "hardhat_light"
 	camera_networks = list(NETWORK_RESEARCH)
 
-/obj/item/clothing/head/space/rig/medical
+/obj/item/clothing/head/helmet/space/rig/medical
 	camera_networks = list(NETWORK_MEDICAL)
 
 
@@ -39,7 +39,7 @@
 	offline_vision_restriction = 2
 	emp_protection = -20
 
-	helm_type = /obj/item/clothing/head/space/rig/industrial
+	helm_type = /obj/item/clothing/head/helmet/space/rig/industrial
 
 	extra_allowed = list(
 		/obj/item/device/t_scanner,
@@ -81,7 +81,7 @@
 	offline_slowdown = 1
 	offline_vision_restriction = 1
 
-	helm_type = /obj/item/clothing/head/space/rig/eva
+	helm_type = /obj/item/clothing/head/helmet/space/rig/eva
 
 	extra_allowed = list(
 		/obj/item/weapon/storage/toolbox,
@@ -124,7 +124,7 @@ Advanced Voidsuit: Technomancer Exultant
 
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 
-	helm_type = /obj/item/clothing/head/space/rig/ce
+	helm_type = /obj/item/clothing/head/helmet/space/rig/ce
 	glove_type = /obj/item/clothing/gloves/rig/ce
 	boot_type = /obj/item/clothing/shoes/magboots/rig/ce
 
@@ -176,7 +176,7 @@ Advanced Voidsuit: Technomancer Exultant
 	drain = 3
 	offline_vision_restriction = 1
 
-	helm_type = /obj/item/clothing/head/space/rig/hazmat
+	helm_type = /obj/item/clothing/head/helmet/space/rig/hazmat
 
 	extra_allowed = list(
 		/obj/item/stack/flag,
@@ -226,7 +226,7 @@ Advanced Voidsuit: Technomancer Exultant
 	slowdown = 0.5
 	offline_vision_restriction = 1
 
-	helm_type = /obj/item/clothing/head/space/rig/medical
+	helm_type = /obj/item/clothing/head/helmet/space/rig/medical
 
 	extra_allowed = list(
 		/obj/item/weapon/storage/firstaid,

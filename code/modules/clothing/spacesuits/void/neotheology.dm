@@ -1,4 +1,4 @@
-/obj/item/clothing/head/space/void/acolyte
+/obj/item/clothing/head/helmet/space/void/acolyte
 	name = "Acolyte hood"
 	desc = "Even the most devout deserve head protection."
 	icon_state = "acolyte"
@@ -24,9 +24,9 @@
 		bio = 100,
 		rad = 75
 	)
-	helmet = /obj/item/clothing/head/space/void/acolyte
+	helmet = /obj/item/clothing/head/helmet/space/void/acolyte
 
-/obj/item/clothing/head/space/void/agrolyte
+/obj/item/clothing/head/helmet/space/void/agrolyte
 	name = "Agrolyte hood"
 	desc = "Don't want anything getting in your eyes."
 	icon_state = "botanist"
@@ -52,9 +52,9 @@
 		bio = 100,
 		rad = 75
 	)
-	helmet = /obj/item/clothing/head/space/void/agrolyte
+	helmet = /obj/item/clothing/head/helmet/space/void/agrolyte
 
-/obj/item/clothing/head/space/void/custodian
+/obj/item/clothing/head/helmet/space/void/custodian
 	name = "Custodian helmet"
 	desc = "Cleaning floors is more dangerous than it looks."
 	icon_state = "custodian"
@@ -82,4 +82,4 @@
 		rad = 90
 	)
 	unacidable = TRUE
-	helmet = /obj/item/clothing/head/space/void/custodian
+	helmet = /obj/item/clothing/head/helmet/space/void/custodian

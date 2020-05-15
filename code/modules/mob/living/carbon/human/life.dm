@@ -738,7 +738,7 @@
 
 	var/obj/item/weapon/implant/core_implant/cruciform/C = get_core_implant(/obj/item/weapon/implant/core_implant/cruciform)
 	if(C)
-		var/datum/core_module/cruciform/neotheologyhud/NT_hud = C.get_module(/datum/core_module/cruciform/neotheologyhud)
+		var/datum/core_module/cruciform/absolutismhud/NT_hud = C.get_module(/datum/core_module/cruciform/absolutismhud)
 		if(NT_hud)
 			NT_hud.update_crucihud()
 
@@ -955,7 +955,7 @@
 		holder.icon_state = "hudblank"
 		if(mind && mind.antagonist.len != 0)
 			var/datum/antagonist/antag = mind.antagonist[1]	//only display the first antagonist role
-			if(hud_icon_reference[antag.role_text]) 
+			if(hud_icon_reference[antag.role_text])
 				holder.icon_state = hud_icon_reference[antag.role_text]
 			else
 				holder.icon_state = "hudsyndicate"

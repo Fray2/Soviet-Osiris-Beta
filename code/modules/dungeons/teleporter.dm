@@ -28,7 +28,7 @@
 /obj/rogue/teleporter/New()
 	for(var/turf/T in orange(7, src))
 		turfs_around += T
-
+/*
 /obj/rogue/teleporter/attack_hand(var/mob/user as mob)
 	if(!charge)
 		target = locate(/obj/crawler/spawnpoint)
@@ -194,7 +194,7 @@
 		O.Weaken(flash_time)
 
 		sleep(1)
-
+*/
 
 /obj/rogue/telebeacon
 	name = "ancient beacon"
@@ -214,7 +214,7 @@
 
 
 
-
+/*
 /obj/rogue/telebeacon/attack_hand(var/mob/user as mob)
 	if(!target)
 		target = locate(/obj/crawler/teleport_marker)
@@ -266,3 +266,4 @@
 		var/datum/effect/effect/system/spark_spread/sparks = new /datum/effect/effect/system/spark_spread()
 		sparks.set_up(3, 0, get_turf(user))
 		sparks.start()
+*/

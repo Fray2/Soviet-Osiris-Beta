@@ -1,4 +1,4 @@
-/obj/item/clothing/head/space/void/SCAF
+/obj/item/clothing/head/helmet/space/void/SCAF
 	name = "SCAF helmet"
 	desc = "A thick airtight helmet designed for planetside warfare retrofitted with seals to act like normal space suit helmet."
 	icon_state = "scaf"
@@ -36,11 +36,11 @@
 	resilience = 0.07
 	species_restricted = list("Human")
 	supporting_limbs = list()
-	helmet = /obj/item/clothing/head/space/void/SCAF
+	helmet = /obj/item/clothing/head/helmet/space/void/SCAF
 
 
 //Voidsuit for traitors
-/obj/item/clothing/head/space/void/merc
+/obj/item/clothing/head/helmet/space/void/merc
 	name = "blood-red voidsuit helmet"
 	desc = "An advanced helmet designed for work in special operations. This version is additionally reinforced against melee attacks."
 	icon_state = "syndiehelm"
@@ -58,7 +58,7 @@
 	camera_networks = list(NETWORK_MERCENARY)
 	light_overlay = "helmet_light_ihs"
 
-/obj/item/clothing/head/space/void/merc/update_icon()
+/obj/item/clothing/head/helmet/space/void/merc/update_icon()
 	..()
 	if(on)
 		icon_state = "syndiehelm_on"
@@ -83,7 +83,7 @@
 	breach_threshold = 8
 	resilience = 0.08
 	species_restricted = list("Human")
-	helmet = /obj/item/clothing/head/space/void/merc
+	helmet = /obj/item/clothing/head/helmet/space/void/merc
 
 /obj/item/clothing/suit/space/void/merc/equipped
 	boots = /obj/item/clothing/shoes/magboots

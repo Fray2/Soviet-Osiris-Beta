@@ -47,7 +47,7 @@
 
 /obj/structure/closet/secure_closet/reinforced/co
 	name = "Commissioner's locker"
-	req_access = list(access_co)
+	req_access = list(access_captain)
 	icon_state = "hop"
 
 /obj/structure/closet/secure_closet/reinforced/co/populate_contents()
@@ -82,7 +82,7 @@
 	new /obj/item/clothing/head/beret/sec/navy/hos(src)
 	new /obj/item/clothing/head/HoS(src)
 	new /obj/item/clothing/mask/gas/ihs(src)
-	new /obj/item/clothing/suit/armor/greatcoat/ironhammer(src)
+	new /obj/item/clothing/suit/greatcoat/ih(src)
 	new /obj/item/clothing/under/rank/ih_commander(src)
 	new /obj/item/device/radio/headset/heads/hos(src)
 	new /obj/item/clothing/glasses/sunglasses/sechud/tactical(src)
@@ -143,7 +143,7 @@
 
 /obj/structure/closet/secure_closet/personal/security/populate_contents()
 	new /obj/item/device/radio/headset/headset_sec(src)
-	new /obj/item/clothing/head/armor/bulletproof/ironhammer_full(src)
+	new /obj/item/clothing/head/helmet/ballistic/militia(src)
 	new /obj/item/clothing/mask/balaclava/tactical(src)
 	new /obj/item/clothing/suit/armor/bulletproof/ironhammer(src)
 	new /obj/item/device/lighting/toggleable/flashlight/seclite(src)

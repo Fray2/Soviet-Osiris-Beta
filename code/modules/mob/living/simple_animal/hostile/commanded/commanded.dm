@@ -3,6 +3,7 @@
 
 /mob/living/simple_animal/hostile/commanded
 	name = "commanded"
+	var/short_name = null
 	stance = COMMANDED_STOP
 	melee_damage_lower = 0
 	melee_damage_upper = 0

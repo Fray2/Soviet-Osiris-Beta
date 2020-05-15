@@ -91,7 +91,7 @@
 		return
 
 	var/area/A = get_area(src)
-	if(istype(loc, /obj/machinery/neotheology))
+	if(istype(loc, /obj/machinery/absolutism))
 		address = "[loc.name] in [strip_improper(A.name)]"
 		return
 

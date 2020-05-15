@@ -12,11 +12,11 @@
 
 
 /datum/ritual/cruciform/crusader/brotherhood/perform(mob/living/carbon/human/user, obj/item/weapon/implant/core_implant/C)
-	var/datum/core_module/cruciform/neotheologyhud/hud_module = C.get_module(/datum/core_module/cruciform/neotheologyhud)
+	var/datum/core_module/cruciform/absolutismhud/hud_module = C.get_module(/datum/core_module/cruciform/absolutismhud)
 	if(hud_module)
 		C.remove_module(hud_module)
 	else
-		C.add_module(new /datum/core_module/cruciform/neotheologyhud)
+		C.add_module(new /datum/core_module/cruciform/absolutismhud)
 	return TRUE
 
 

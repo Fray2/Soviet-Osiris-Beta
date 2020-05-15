@@ -1,4 +1,4 @@
-/obj/item/clothing/head/space/rig/combat
+/obj/item/clothing/head/helmet/space/rig/combat
 	light_overlay = "helmet_light_dual_green"
 
 /obj/item/weapon/rig/combat
@@ -19,7 +19,7 @@
 	offline_slowdown = 3
 	offline_vision_restriction = 1
 
-	helm_type = /obj/item/clothing/head/space/rig/combat
+	helm_type = /obj/item/clothing/head/helmet/space/rig/combat
 
 /obj/item/weapon/rig/combat/equipped
 	initial_modules = list(
@@ -33,14 +33,14 @@
 		)
 
 //Ironhammer rig suit
-/obj/item/clothing/head/space/rig/combat/ironhammer
+/obj/item/clothing/head/helmet/space/rig/combat/ironhammer
 	light_overlay = "sec_light"
 
 /obj/item/weapon/rig/combat/ironhammer
 	name = "ironhammer hardsuit control module"
 	desc = "Standard operative suit issued to Ironhammer mercenaries. Provides balanced overall protection against various threats and widely used on planets surface, space stations or in open space."
 	icon_state = "ihs_rig"
-	helm_type = /obj/item/clothing/head/space/rig/combat/ironhammer
+	helm_type = /obj/item/clothing/head/helmet/space/rig/combat/ironhammer
 	suit_type = "ironhammer hardsuit"
 
 /obj/item/weapon/rig/combat/ironhammer/equipped
@@ -51,7 +51,7 @@
 		)
 
 //Hazard Suit
-/obj/item/clothing/head/space/rig/hazard
+/obj/item/clothing/head/helmet/space/rig/hazard
 	light_overlay = "helmet_light_dual"
 	camera_networks = list(NETWORK_SECURITY)
 
@@ -73,7 +73,7 @@
 	offline_slowdown = 3
 	offline_vision_restriction = 1
 
-	helm_type = /obj/item/clothing/head/space/rig/hazard
+	helm_type = /obj/item/clothing/head/helmet/space/rig/hazard
 
 	req_access = list()
 	req_one_access = list()
