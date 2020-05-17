@@ -1,44 +1,51 @@
 // Gloves
-/datum/gear/gloves/
-	slot = slot_gloves
-	sort_category = "Перчатки"
-	category = /datum/gear/gloves/
-
-/datum/gear/gloves/work
-	display_name = "gloves, work"
+/datum/gear/gloves
+	display_name = "gloves, thick"
+	sort_category = "Gloves and Handwear"
 	path = /obj/item/clothing/gloves/thick
-	cost = 3
-
-/datum/gear/gloves/latex
-	display_name = "gloves, latex"
-	path = /obj/item/clothing/gloves/latex
-
-/datum/gear/gloves/rainbow
-	display_name = "gloves, rainbow"
-	path = /obj/item/clothing/gloves/color/rainbow
+	slot = slot_gloves
 	cost = 2
 
-/datum/gear/gloves/colored
-	display_name = "gloves, colored"
-	flags = GEAR_HAS_COLOR_SELECTION
+/datum/gear/gloves/color
+	display_name = "gloves basic selection"
+	sort_category = "Gloves and Handwear"
 	path = /obj/item/clothing/gloves/color
+	slot = slot_gloves
+	flags = GEAR_HAS_TYPE_SELECTION
+	cost = 1
+/*
+/datum/gear/gloves/custom
+	display_name = "gloves, customized"
+	sort_category = "Gloves and Handwear"
+	path = /obj/item/clothing/gloves/custom
+	slot = slot_gloves
+	flags = GEAR_HAS_COLOR_SELECTION
+	cost = 1
 
-/datum/gear/gloves/color_presets
-	display_name = "gloves, color presets"
-	path = /obj/item/clothing/gloves/color/blue
+/datum/gear/gloves/evening
+	display_name = "gloves, evening"
+	sort_category = "Gloves and Handwear"
+	path = /obj/item/clothing/gloves/evening
+	slot = slot_gloves
+	cost = 1
+*/
+/datum/gear/gloves/latex
+	display_name = "gloves, latex"
+	sort_category = "Gloves and Handwear"
+	path = /obj/item/clothing/gloves/latex
+	slot = slot_gloves
+	cost = 1
 
-/datum/gear/gloves/color_presets/New()
-	..()
-	var/gloves = list(
-		"Blue"			= 	/obj/item/clothing/gloves/color/blue,
-		"Yellow"		= 	/obj/item/clothing/gloves/color/yellow,
-		"White"			= 	/obj/item/clothing/gloves/color/white,
-		"Red"			= 	/obj/item/clothing/gloves/color/red,
-		"Purple"		= 	/obj/item/clothing/gloves/color/purple,
-		"Orange"		= 	/obj/item/clothing/gloves/color/orange,
-		"Grey"			= 	/obj/item/clothing/gloves/color/grey,
-		"Green"			=	/obj/item/clothing/gloves/color/green,
-		"Light-Brown"	=	/obj/item/clothing/gloves/color/light_brown,
-		"Brown"			=	/obj/item/clothing/gloves/color/brown
-	)
-	gear_tweaks += new /datum/gear_tweak/path(gloves)
+/datum/gear/gloves/insulated
+	display_name = "insulated gloves"
+	sort_category = "Gloves and Handwear"
+	path = /obj/item/clothing/gloves/insulated
+	slot = slot_gloves
+	cost = 6
+
+/datum/gear/gloves/latex
+	display_name = "budget insulated gloves"
+	sort_category = "Gloves and Handwear"
+	path = /obj/item/clothing/gloves/insulated/cheap
+	slot = slot_gloves
+	cost = 2

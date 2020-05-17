@@ -46,6 +46,7 @@
 #define STRUCTURE_DAMAGE_BORING 		3
 
 //Quick defines for fire modes
+#define FULL_AUTO_250		list(mode_name="full auto",  mode_type = /datum/firemode/automatic, fire_delay=2.4, icon="auto")
 #define FULL_AUTO_300		list(mode_name="full auto",  mode_type = /datum/firemode/automatic, fire_delay=2  , icon="auto")
 #define FULL_AUTO_400		list(mode_name="full auto",  mode_type = /datum/firemode/automatic, fire_delay=1.5, icon="auto")
 #define FULL_AUTO_600		list(mode_name="full auto",  mode_type = /datum/firemode/automatic, fire_delay=1  , icon="auto")
@@ -53,6 +54,7 @@
 
 #define SEMI_AUTO_NODELAY	list(mode_name="semiauto", burst=1, fire_delay=0, move_delay=null, icon="semi")
 
+#define BURST_2_ROUND		list(mode_name="2-round bursts", burst=2, fire_delay=null, move_delay=2, icon="burst")
 #define BURST_3_ROUND		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4, icon="burst")
 #define BURST_5_ROUND		list(mode_name="5-round bursts", burst=5, fire_delay=null, move_delay=6, icon="burst")
 #define BURST_8_ROUND		list(mode_name="8-round bursts", burst=8, fire_delay=null, move_delay=8, icon="burst")

@@ -58,7 +58,7 @@
 		if(53 to 54)
 			new/obj/item/latexballon(src)
 		if(55 to 56)
-			var/newitem = pick(typesof(/obj/item/toy/prize) - /obj/item/toy/prize)
+			var/newitem = pick(typesof(/obj/item/toy/figure/mecha) - /obj/item/toy/figure/mecha)
 			new newitem(src)
 		if(57 to 60)
 			new/obj/item/weapon/rig(src)
@@ -82,7 +82,7 @@
 		if(75 to 78)
 			new/obj/item/weapon/tool/pickaxe/diamonddrill(src)
 		if(79 to 84)
-			new/obj/item/toy/katana(src)
+			new/obj/item/toy/weapon/katana(src)
 		if(85 to 86)
 			new/obj/item/seeds/random(src)
 		if(87) // Rarest things, some are unobtainble otherwise, some are just robust,  1% each
@@ -105,7 +105,7 @@
 			new/obj/item/weapon/bikehorn(src)
 			//new/obj/item/weapon/stamp/clown(src) I'd add it, but only clowns can use it
 			new/obj/item/weapon/pen/crayon/rainbow(src)
-			new/obj/item/toy/waterflower(src)
+			new/obj/item/toy/weapon/waterflower(src)
 		if(94)
 			new/obj/item/clothing/under/mime(src)
 			new/obj/item/clothing/shoes/black(src)

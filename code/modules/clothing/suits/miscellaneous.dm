@@ -155,6 +155,12 @@
 	desc = "An oldfashioned blue swimsuit."
 	icon_state = "swim_blue"
 
+/obj/item/clothing/under/swimsuit/earth
+	name = "earth swimsuit"
+	desc = "A earth swimsuit perfect for the pool."
+	icon_state = "swim_earth"
+	siemens_coefficient = 1
+
 /obj/item/clothing/under/swimsuit/purple
 	name = "purple swimsuit"
 	desc = "An oldfashioned purple swimsuit."
@@ -170,11 +176,55 @@
 	desc = "An oldfashioned red swimsuit."
 	icon_state = "swim_red"
 
-/obj/item/clothing/suit/poncho
-	name = "poncho"
-	desc = "A simple, comfortable poncho."
+/obj/item/clothing/under/swimsuit/striped
+	name = "striped swimsuit"
+	desc = "A striped swimsuit perfect for the pool."
+	icon_state = "swim_striped"
+	siemens_coefficient = 1
+
+/obj/item/clothing/under/swimsuit
+	name = "white swimsuit"
+	desc = "A white swimsuit perfect for the pool."
+	icon_state = "swim_white"
+	siemens_coefficient = 1
+
+/*Poncho*/
+
+/obj/item/clothing/suit/poncho/blue
+	name = "blue poncho"
+	desc = "A comfortable sleeveless poncho with a blue design."
+	icon_state = "blueponcho"
+	item_state = "blueponcho"
+
+/obj/item/clothing/suit/poncho/brown
+	name = "brown poncho"
+	desc = "A comfortable sleeveless poncho with a brown design."
 	icon_state = "classicponcho"
 	item_state = "classicponcho"
+
+/obj/item/clothing/suit/poncho/green
+	name = "green poncho"
+	desc = "A comfortable sleeveless poncho with a green design."
+	icon_state = "greenponcho"
+	item_state = "greenponcho"
+
+/obj/item/clothing/suit/poncho/pink
+	name = "pink poncho"
+	desc = "A comfortable sleeveless poncho with a pink design."
+	icon_state = "pinkponcho"
+	item_state = "pinkponcho"
+
+/obj/item/clothing/suit/poncho/purple
+	name = "purple poncho"
+	desc = "A comfortable sleeveless poncho with a purple design."
+	icon_state = "purpleponcho"
+	item_state = "purpleponcho"
+
+/obj/item/clothing/suit/poncho
+	name = "red poncho"
+	desc = "A comfortable sleeveless poncho with a red design."
+	icon_state = "redponcho"
+	item_state = "redponcho"
 
 /obj/item/clothing/suit/storage/toggle/bomber
 	name = "bomber jacket"
@@ -239,3 +289,65 @@
 		rad = 0
 	)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
+
+/*Shirts*/
+
+/obj/item/clothing/suit/shirt
+	name = "corgi shirt"
+	desc = "A curiously comfortable shirt covered with a picture of a corgi."
+	icon_state = "ianshirt"
+	item_state = "ianshirt"
+
+/obj/item/clothing/suit/shirt/nerd
+	name = "gamer shirt"
+	desc = "A baggy shirt with vintage game character Phanic the Weasel. "
+	icon_state = "nerdshirt"
+	item_state = "nerdshirt"
+
+/obj/item/clothing/suit/shirt/vape //wearing this is asking to get beat.
+	name = "vape naysh shirt"
+	desc = "A cheap shirt with a tacky VN logo on the front."
+	icon_state = "vapeshirt"
+	item_state = "vapeshirt"
+
+/*Lizard*/
+
+/obj/item/clothing/suit/lizard/robe
+	name = "roughspun robes"
+	desc = "A traditional roughspun garment."
+	icon_state = "robe-unathi"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
+
+/obj/item/clothing/suit/lizard/mantle
+	name = "hide mantle"
+	desc = "A rather grisly selection of cured hides and skin, sewn together to form a ragged mantle."
+	icon_state = "mantle-unathi"
+	body_parts_covered = UPPER_TORSO
+
+/*Feline*/
+
+/obj/item/clothing/suit/feline/furs
+	name = "heavy furs"
+	desc = "A traditional heavy fur garment."
+	icon_state = "zhan_furs"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT|HIDETAIL
+
+/obj/item/clothing/suit/sling
+	name = "universal sling"
+	desc = "A generic universal equipment sling for whatever you could need on your back."
+	icon_state = "universal_sling"
+	allowed = list (/obj/item/weapon/gun,
+	/obj/item/device,
+	/obj/item/weapon/material,
+	/obj/item/weapon/storage/pouch,
+	/obj/item/weapon/storage/box,
+	/obj/item/weapon/storage/firstaid,
+	/obj/item/weapon/storage/lockbox,
+	/obj/item/weapon/storage/part_replacer,
+	/obj/item/weapon/storage/secure,
+	/obj/item/weapon/storage/toolbox,
+	/obj/item/weapon/tank,
+	/obj/item/ammo_magazine,
+	/obj/item/ammo_magazine/ammobox/
+	)

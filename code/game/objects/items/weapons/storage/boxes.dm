@@ -457,7 +457,7 @@
 
 /obj/item/weapon/storage/box/snappops/populate_contents()
 	for(var/i in 1 to 8)
-		new /obj/item/toy/snappop(src)
+		new /obj/item/toy/junk/snappop(src)
 
 /obj/item/weapon/storage/box/matches
 	name = "matchbox"

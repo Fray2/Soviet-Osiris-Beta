@@ -157,3 +157,157 @@
 		overlays += "[icon_state]_power_on"
 	else
 		overlays += "[icon_state]_power_off"
+
+/obj/item/weapon/tool/sword/crusader
+	name = "crusader greatsword"
+	desc = "A traditional blade meeting the materials and design of the future. It's made from durasteel and the craftmenship is of the highest quality. It bears the insignia of the Church. Deus Vult."
+	icon = 'icons/obj/weapons-blades.dmi'
+	icon_state = "crusader"
+	item_state = "crusader"
+	force = WEAPON_FORCE_LETHAL
+	armor_penetration = ARMOR_PEN_HALF
+	matter = list(MATERIAL_DURASTEEL = 25, MATERIAL_PLASTIC = 3)
+	price_tag = 10000
+
+/obj/item/weapon/tool/foremansledge
+	name = "foreman's sledgehammer"
+	desc = "Once a tool used to nail rivets, now a tool used to crush skulls. The signature weapon of the prospector's foreman."
+	icon = 'icons/obj/weapons.dmi'
+	icon_state = "sledgehammer0"
+	item_state = "sledgehammer1"
+	force = WEAPON_FORCE_BRUTAL
+	slot_flags = SLOT_BELT | SLOT_BACK
+	armor_penetration = ARMOR_PEN_EXTREME
+	throwforce = WEAPON_FORCE_PAINFUL
+	matter = list(MATERIAL_PLASTEEL = 30, MATERIAL_PLASTIC = 5)
+	throw_speed = 1
+	throw_range = 4
+	w_class = ITEM_SIZE_BULKY
+	origin_tech = list(TECH_COMBAT = 3)
+	attack_verb = list("attacked", "bashed", "battered", "bludgeoned", "whacked","flattened","pulped")
+	structure_damage_factor = STRUCTURE_DAMAGE_BREACHING
+	tool_qualities = list(QUALITY_HAMMERING = 45)
+	worksound = WORKSOUND_HAMMER
+	price_tag = 2000
+
+/obj/item/weapon/tool/sword/saber
+	name = "premier's saber"
+	desc = "A finely made formal blade fit for the premier. Despite being primarily for show it cuts deep and painfully."
+	icon = 'icons/obj/weapons-blades.dmi'
+	icon_state = "saber"
+	item_state = "saber"
+	armor_penetration = ARMOR_PEN_SHALLOW
+
+/obj/item/weapon/tool/sword/saber/cutlass
+	name = "cutlass"
+	desc = "A finely made sword for pirates or military men who take themselves too seriously."
+	icon_state = "cutlass"
+	item_state = "cutlass"
+
+/obj/item/weapon/tool/sword/machete
+	name = "machete"
+	desc = "An explorer's best friend and trust back up plan. Or primary plan for those who like to get in there personally."
+	icon = 'icons/obj/weapons-blades.dmi'
+	icon_state = "machete"
+	item_state = "machete"
+	force = WEAPON_FORCE_ROBUST
+	w_class = ITEM_SIZE_NORMAL
+
+//Hammers (hammer tool quality isnt in yet so they dont have tool qualities) - would need it's own file soon
+
+/obj/item/weapon/tool/homewrecker
+	name = "homewrecker"
+	desc = "A large steel chunk welded to a long handle. Extremely heavy."
+	icon = 'icons/obj/weapons.dmi'
+	icon_state = "homewrecker0"
+	wielded_icon = "homewrecker1"
+	armor_penetration = ARMOR_PEN_EXTREME
+	w_class = ITEM_SIZE_BULKY
+	force = WEAPON_FORCE_NORMAL
+	force_unwielded = WEAPON_FORCE_NORMAL
+	force_wielded = WEAPON_FORCE_DANGEROUS
+	tool_qualities = list(QUALITY_HAMMERING = 15)
+	attack_verb = list("attacked", "smashed", "bludgeoned", "beaten")
+	structure_damage_factor = STRUCTURE_DAMAGE_BREACHING
+	max_upgrades = 5
+
+//Knifes
+
+/obj/item/weapon/tool/knife
+	name = "kitchen knife"
+	desc = "A general purpose Chef's Knife made by Asters Merchant Guild. Guaranteed to stay sharp for years to come."
+	icon = 'icons/obj/kitchen.dmi'
+	icon_state = "knife"
+	flags = CONDUCT
+	sharp = TRUE
+	edge = TRUE
+	worksound = WORKSOUND_HARD_SLASH
+	w_class = ITEM_SIZE_SMALL
+	force = WEAPON_FORCE_NORMAL
+	throwforce = WEAPON_FORCE_WEAK
+	armor_penetration = ARMOR_PEN_SHALLOW
+	max_upgrades = 2
+	tool_qualities = list(QUALITY_CUTTING = 20,  QUALITY_WIRE_CUTTING = 10, QUALITY_SCREW_DRIVING = 5)
+	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 1)
+	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
+	slot_flags = SLOT_BELT
+	structure_damage_factor = STRUCTURE_DAMAGE_BLADE
+
+/obj/item/weapon/tool/knife/boot
+	name = "boot knife"
+	desc = "A small fixed-blade knife for putting inside a boot."
+	icon = 'icons/obj/weapons.dmi'
+	icon_state = "tacknife"
+	item_state = "knife"
+	matter = list(MATERIAL_PLASTEEL = 2, MATERIAL_PLASTIC = 1)
+	force = WEAPON_FORCE_PAINFUL
+	tool_qualities = list(QUALITY_CUTTING = 20,  QUALITY_WIRE_CUTTING = 10, QUALITY_SCREW_DRIVING = 15)
+
+/obj/item/weapon/tool/knife/hook
+	name = "meat hook"
+	desc = "A sharp, metal hook what sticks into things."
+	icon_state = "hook_knife"
+	item_state = "hook_knife"
+	matter = list(MATERIAL_PLASTEEL = 5, MATERIAL_PLASTIC = 2)
+	force = WEAPON_FORCE_DANGEROUS
+	armor_penetration = ARMOR_PEN_EXTREME //Should be countered be embedding
+	embed_mult = 1.5 //This is designed for embedding
+
+/obj/item/weapon/tool/knife/ritual
+	name = "ritual knife"
+	desc = "The unearthly energies that once powered this blade are now dormant."
+	icon = 'icons/obj/wizard.dmi'
+	icon_state = "render"
+	force = WEAPON_FORCE_PAINFUL
+
+/obj/item/weapon/tool/knife/butch
+	name = "butcher's cleaver"
+	icon_state = "butch"
+	desc = "A huge thing used for chopping and chopping up meat. This includes roaches and roach-by-products."
+	force = WEAPON_FORCE_DANGEROUS
+	throwforce = WEAPON_FORCE_NORMAL
+	armor_penetration = ARMOR_PEN_MODERATE
+	attack_verb = list("cleaved", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
+	matter = list(MATERIAL_STEEL = 5, MATERIAL_PLASTIC = 1)
+	tool_qualities = list(QUALITY_CUTTING = 20,  QUALITY_WIRE_CUTTING = 15)
+
+/obj/item/weapon/tool/knife/neotritual
+	name = "Absolutism ritual knife"
+	desc = "The sweet embrace of mercy, for relieving the soul from a tortured vessel."
+	icon = 'icons/obj/weapons.dmi'
+	icon_state = "neot-knife"
+	item_state = "knife"
+	matter = list(MATERIAL_PLASTEEL = 4, MATERIAL_PLASTIC = 1)
+	force = WEAPON_FORCE_PAINFUL
+	max_upgrades = 3
+
+/obj/item/weapon/tool/knife/tacknife
+	name = "tactical knife"
+	desc = "You'd be killing loads of people if this was Medal of Valor: Heroes of Space."
+	icon = 'icons/obj/weapons.dmi'
+	icon_state = "tacknife_guard"
+	item_state = "knife"
+	matter = list(MATERIAL_PLASTEEL = 3, MATERIAL_PLASTIC = 2)
+	force = WEAPON_FORCE_PAINFUL
+	armor_penetration = ARMOR_PEN_MODERATE
+	max_upgrades = 3

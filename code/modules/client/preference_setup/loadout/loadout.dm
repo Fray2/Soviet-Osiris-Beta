@@ -44,7 +44,7 @@ var/list/gear_datums = list()
 /datum/category_item/player_setup_item/loadout
 	name = "Loadout"
 	sort_order = 1
-	var/current_tab = "Общее"
+	var/current_tab = "General"
 	var/hide_unavailable_gear = 0
 
 /datum/category_item/player_setup_item/loadout/load_character(var/savefile/S)
@@ -128,10 +128,10 @@ var/list/gear_datums = list()
 	. += "<a href='?src=\ref[src];prev_slot=1'>\<\<</a><b><font color = '[fcolor]'>\[[pref.gear_slot]\]</font> </b><a href='?src=\ref[src];next_slot=1'>\>\></a>"
 
 	if(config.max_gear_cost < INFINITY)
-		. += " <b><font color = '[fcolor]'>[total_cost]/[config.max_gear_cost]</font> loadout points spent. </b>"
+		. += "<b><font color = '[fcolor]'>[total_cost]/[config.max_gear_cost]</font> loadout points spent.</b>"
 
-	. += "<a href='?src=\ref[src];clear_loadout=1'>Сбросить</a> "
-	. += "<a href='?src=\ref[src];toggle_hiding=1'>[hide_unavailable_gear ? "Показать все" : "Скрыть недоступное"]</a></center></td></tr>"
+	. += "<a href='?src=\ref[src];clear_loadout=1'>Clear Loadout</a>"
+	. += "<a href='?src=\ref[src];toggle_hiding=1'>[hide_unavailable_gear ? "Show all" : "Hide unavailable"]</a></center></td></tr>"
 
 	. += "<tr><td colspan=3><center><b>"
 	var/firstcat = 1
@@ -305,7 +305,7 @@ var/list/gear_datums = list()
 	var/list/allowed_roles //Roles that can spawn with this item.
 	var/list/allowed_branches //Service branches that can spawn with it.
 	var/whitelisted        //Term to check the whitelist for..
-	var/sort_category = "Общее"
+	var/sort_category = "General"
 	var/flags              //Special tweaks in new
 	var/category
 	var/list/gear_tweaks = list() //List of datums which will alter the item after it has been spawned.

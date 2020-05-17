@@ -11,9 +11,17 @@
 	matter = list(MATERIAL_PLASTIC = 1)
 	attack_verb = list("stamped")
 
+	var/stamp_text		//If set, changes the text of the stamp at the bottom.
+	var/xplus	= 2		//How far up in the X direction the stamp can be overlaid.
+	var/xminus	= -2	//How far down in the X direction, the same.
+	var/yplus	= 2		//Ditto for Y
+	var/yminus	= -3	//Ditto for Y
+
 /obj/item/weapon/stamp/captain
-	name = "captain's rubber stamp"
+	name = "premier's rubber stamp"
 	icon_state = "stamp-cap"
+	xplus = 0
+	yminus = -1
 
 /obj/item/weapon/stamp/hop
 	name = "first officer's rubber stamp"
@@ -23,9 +31,17 @@
 	name = "ironhammer commander's rubber stamp"
 	icon_state = "stamp-hos"
 
+/obj/item/weapon/stamp/hos2
+	name = "militia commander's rubber stamp"
+	icon_state = "stamp-hos"
+
 /obj/item/weapon/stamp/ce
 	name = "exultant's rubber stamp"
 	icon_state = "stamp-ce"
+
+/obj/item/weapon/stamp/pr
+	name = "prime's rubber stamp"
+	icon_state = "stamp-pr"
 
 /obj/item/weapon/stamp/rd
 	name = "moebius expedition overseer's rubber stamp"
@@ -46,6 +62,10 @@
 /obj/item/weapon/stamp/qm
 	name = "guild merchant's stamp"
 	icon_state = "stamp-qm"
+
+/obj/item/weapon/stamp/fr
+	name = "foreman's stamp"
+	icon_state = "stamp-fr"
 
 // Syndicate stamp to forge documents.
 /obj/item/weapon/stamp/chameleon/attack_self(mob/user as mob)
@@ -69,3 +89,8 @@
 		if(chosen_stamp)
 			name = chosen_stamp.name
 			icon_state = chosen_stamp.icon_state
+			stamp_text = chosen_stamp.stamp_text
+			xplus = chosen_stamp.xplus
+			xminus = chosen_stamp.xminus
+			yplus = chosen_stamp.yplus
+			yminus = chosen_stamp.yminus
