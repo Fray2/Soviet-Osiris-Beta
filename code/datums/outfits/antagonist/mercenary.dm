@@ -17,7 +17,7 @@
 //He gets a snazzy beret
 /decl/hierarchy/outfit/antagonist/mercenary/commander
 	name = "Serbian Mercenary Commander"
-	head = /obj/item/clothing/head/beret/sec/navy/hos
+//	head = /obj/item/clothing/head/beret/sec/navy/hos
 
 
 

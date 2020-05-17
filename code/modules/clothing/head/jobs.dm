@@ -1,14 +1,14 @@
-
 //Bartender
-/obj/item/clothing/head/chefhat
+/obj/item/clothing/head/rank/chef
 	name = "chef's hat"
 	desc = "It's a hat used by chefs to keep hair out of your food. Judging by the food in the mess, they don't work."
 	icon_state = "chefhat"
 	item_state = "chefhat"
 
 //Captain
-/obj/item/clothing/head/caphat
-	name = "captain's hat"
+
+/obj/item/clothing/head/rank/captain
+	name = "premier's hat"
 	icon_state = "captain"
 	desc = "It's good being the king."
 	item_state_slots = list(
@@ -17,25 +17,26 @@
 		)
 	body_parts_covered = 0
 
-/obj/item/clothing/head/caphat/cap
-	name = "captain's cap"
+/obj/item/clothing/head/rank/captain/cap
+	name = "premier's cap"
 	desc = "You fear to wear it for the negligence it brings."
 	icon_state = "capcap"
 
-/obj/item/clothing/head/caphat/formal
+
+/obj/item/clothing/head/rank/captain/formal
 	name = "parade hat"
 	desc = "No one in a commanding position should be without a perfect, white hat of ultimate authority."
 	icon_state = "officercap"
 
 //HOP
-/obj/item/clothing/head/caphat/hop
-	name = "crew resource's hat"
+/obj/item/clothing/head/rank/first_officer
+	name = "steward's hat"
 	desc = "A stylish hat that both protects you from enraged former-crewmembers and gives you a false sense of authority."
 	icon_state = "hopcap"
 
 //Chaplain
-/obj/item/clothing/head/chaplain_hood
-	name = "preacher's hood"
+/obj/item/clothing/head/rank/chaplain
+	name = "chaplain's hood"
 	desc = "It's hood that covers the head. It keeps you warm during the space winters."
 	icon_state = "chaplain_hood"
 	flags_inv = BLOCKHAIR
@@ -51,55 +52,75 @@
 
 //Mime
 /obj/item/clothing/head/beret
-	name = "beret"
-	desc = "A beret, an artists favorite headwear."
+	name = "red beret"
+	desc = "A formidable red beret."
 	icon_state = "beret"
 	body_parts_covered = 0
 
 //Security
-/obj/item/clothing/head/beret/sec/navy/officer
-	name = "Operative beret"
-	desc = "A navy blue beret with an Operative's rank emblem. For officers that are more inclined towards style than safety."
+/obj/item/clothing/head/rank/ironhammer
+	name = "marshal beret"
+	desc = "A navy blue marshal beret."
 	icon_state = "beret_navy_officer"
-/obj/item/clothing/head/beret/sec/navy/hos
-	name = "Commander beret"
-	desc = "Grey beret with a Commander's rank emblem. For officers that are more inclined towards style than safety."
+
+/obj/item/clothing/head/rank/commander/beret
+	name = "warrant officer beret"
+	desc = "A grey warrant officer beret signifying a command position."
 	icon_state = "beret_navy_hos"
-/obj/item/clothing/head/beret/sec/navy/warden
-	name = "Sergeant beret"
-	desc = "Read beret with a Sergeant's rank emblem. For officers that are more inclined towards style than safety."
+
+/obj/item/clothing/head/rank/commander/cap
+	name = "warrant officer cap"
+	desc = "A marshal cap signifying a command position."
+	icon_state = "ihc_cap"
+
+/obj/item/clothing/head/rank/warden/beret
+	name = "supply specialist beret"
+	desc = "A red marshal beret signifying a supply specialist position."
 	icon_state = "beret_navy_warden"
-/obj/item/clothing/head/beret/engineering
-	name = "engineering beret"
-	desc = "A beret with the engineering insignia emblazoned on it. For engineers that are more inclined towards style than safety."
+
+/obj/item/clothing/head/rank/engineering
+	name = "adept beret"
+	desc = "A yellow beret signifying a guild adept position."
 	icon_state = "beret_engineering"
+
 /obj/item/clothing/head/beret/purple
 	name = "purple beret"
-	desc = "A stylish, if purple, beret."
+	desc = "A rather stylish purple beret."
 	icon_state = "beret_purple"
+
+/obj/item/clothing/head/beret/black
+	name = "black beret"
+	desc = "A dark and imposing black beret."
+	icon_state = "beretblack"
+
+/obj/item/clothing/head/seccap
+	name = "blue patrol cap"
+	desc = "A blue patrol cap worn by security personnel."
+	icon_state = "sec2soft"
+
+/obj/item/clothing/head/seccorp
+	name = "black patrol cap"
+	desc = "A black patrol cap worn by security personnel."
+	icon_state = "corpsoft"
 
 //Medical
 /obj/item/clothing/head/surgery
-	name = "surgical cap"
-	desc = "A cap surgeons wear during operations. Keeps their hair from tickling your internal organs."
+	name = "blue surgical cap"
+	desc = "A sterile blue surgical cap for medical operations."
 	icon_state = "surgcap_blue"
 	flags_inv = BLOCKHEADHAIR
 
 /obj/item/clothing/head/surgery/purple
-	desc = "A cap surgeons wear during operations. Keeps their hair from tickling your internal organs. This one is deep purple."
+	name = "purple surgical cap"
+	desc = "A sterile purple surgical cap for medical operations."
 	icon_state = "surgcap_purple"
 
-/obj/item/clothing/head/surgery/blue
-	desc = "A cap surgeons wear during operations. Keeps their hair from tickling your internal organs. This one is baby blue."
-	icon_state = "surgcap_blue"
-
 /obj/item/clothing/head/surgery/green
-	desc = "A cap surgeons wear during operations. Keeps their hair from tickling your internal organs. This one is dark green."
+	name = "green surgical cap"
+	desc = "A sterile green surgical cap for medical operations."
 	icon_state = "surgcap_green"
 
-//Blackshield hats
-
-/obj/item/clothing/head/rank/trooper/beret
+/obj/item/clothing/head/rank/trooper/beret //blackshield hats
 	name = "Militia beret"
 	desc = "A faded black beret with its old SolFed badge replaced with that of the Blackshield Militia."
 	icon_state = "beret_militia"

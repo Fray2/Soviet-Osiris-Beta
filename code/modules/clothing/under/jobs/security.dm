@@ -56,12 +56,54 @@
 /*
  * Detective
  */
+
 /obj/item/clothing/under/rank/inspector
-	name = "inspector's suit"
-	desc = "Casual turtleneck and jeans, civilian clothes of Ironhammer Inspector."
+	name = "ranger's turtleneck"
+	desc = "A casual turtleneck and jeans serving as civilian ranger clothing."
 	icon_state = "insp_under"
 	item_state = "insp_under"
 	siemens_coefficient = 0.8
+
+/obj/item/clothing/under/rank/inspector/suit
+	name = "ranger's suit"
+	desc = "A rumpled white shirt combined with grey slacks and a tie worn by rangers."
+	icon_state = "detective"
+	item_state = "det"
+	siemens_coefficient = 0.8
+
+/obj/item/clothing/under/rank/inspector/uniform
+	name = "patrol uniform"
+	desc = "A tidy black uniform worn by security personnel, typically during formal occasions."
+	icon_state = "det_corporate"
+	item_state = "det_corporate"
+
+	armor = list(melee = 15, bullet = 10, laser = 10,energy = 0, bomb = 0, bio = 0, rad = 0)
+	siemens_coefficient = 0.8
+
+/obj/item/clothing/under/rank/inspector/black
+	icon_state = "detective3"
+	//item_state = "sl_suit"
+	desc = "An immaculate white dress shirt, paired with a pair of dark grey dress pants, a red tie, and a charcoal vest."
+
+/obj/item/clothing/head/rank/inspector
+	name = "fedora"
+	desc = "A brown fedora - either the cornerstone of a detective's style or a poor attempt at looking cool, depending on the person wearing it."
+	icon_state = "detective"
+	item_state_slots = list(
+		slot_l_hand_str = "det_hat",
+		slot_r_hand_str = "det_hat",
+		)
+	allowed = list(/obj/item/weapon/reagent_containers/food/snacks/candy_corn, /obj/item/weapon/pen)
+	armor = list(
+		melee = 10,
+		bullet = 0,
+		energy = 0,
+		bomb = 0,
+		bio = 0,
+		rad = 0
+	)
+	siemens_coefficient = 0.8
+	body_parts_covered = 0
 
 /obj/item/clothing/under/rank/det
 	name = "inspector's suit"
