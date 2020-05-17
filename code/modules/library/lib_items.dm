@@ -96,7 +96,17 @@
 	else
 		icon_state = "book-5"
 
+/*Metal Bookcase - same functionality, just a reskin.*/
 
+/obj/structure/bookcase/metal
+	desc = "A metal shelving unit used for storing all sorts of literature."
+	icon_state = "metalshelf-0"
+
+/obj/structure/bookcase/metal/update_icon()
+	if(contents.len < 5)
+		icon_state = "metalshelf-[contents.len]"
+	else
+		icon_state = "metalshelf-5"
 
 /obj/structure/bookcase/manuals/medical
 	name = "Medical Manuals bookcase"
@@ -126,6 +136,7 @@
 
 /obj/structure/bookcase/manuals/research_and_development/New()
 	..()
+	new /obj/item/weapon/book/manual/research_and_development(src)
 	new /obj/item/weapon/book/manual/wiki/science_research(src)
 	new /obj/item/weapon/book/manual/wiki/science_research(src)
 	new /obj/item/weapon/book/manual/wiki/science_robotics(src)

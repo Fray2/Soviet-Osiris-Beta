@@ -1,144 +1,111 @@
 /datum/gear/head
-	display_name = "bandana, pirate-red"
-	path = /obj/item/clothing/head/bandana
+	display_name = "ushanka"
+	path = /obj/item/clothing/head/ushanka
 	slot = slot_head
-	sort_category = "Головные уборы"
+	sort_category = "Hats and Headwear"
 
-/datum/gear/head/bandana_green
-	display_name = "bandana, green"
-	path = /obj/item/clothing/head/greenbandana
+/datum/gear/head/bandana
+	display_name = "bandana head selection"
+	path = /obj/item/clothing/head/bandana
+	flags = GEAR_HAS_TYPE_SELECTION
 
-/datum/gear/head/bandana_orange
-	display_name = "bandana, orange"
-	path = /obj/item/clothing/head/orangebandana
+/datum/gear/head/beanie
+	display_name = "beanie selection"
+	path = /obj/item/clothing/head/beanie
+	flags = GEAR_HAS_TYPE_SELECTION
 
-/datum/gear/head/beret
-	display_name = "beret, red"
+/datum/gear/head/beretselect
+	display_name = "beret selection"
 	path = /obj/item/clothing/head/beret
-
-/datum/gear/head/beret/purp
-	display_name = "beret, purple"
-	path = /obj/item/clothing/head/beret/purple
-
-/datum/gear/head/beret/bsec
-	display_name = "beret, navy (officer)"
-	path = /obj/item/clothing/head/beret/sec/navy/officer
-	allowed_roles = list("Ironhammer Operative","Ironhammer Commander","Gunnery Sergeant")
-
-/datum/gear/head/beret/bsec_warden
-	display_name = "beret, navy (warden)"
-	path = /obj/item/clothing/head/beret/sec/navy/warden
-	allowed_roles = list("Ironhammer Commander","Gunnery Sergeant")
-
-/datum/gear/head/beret/bsec_hos
-	display_name = "beret, navy (hos)"
-	path = /obj/item/clothing/head/beret/sec/navy/hos
-	allowed_roles = list("Ironhammer Commander")
-
-/datum/gear/head/beret/eng
-	display_name = "beret, engie-orange"
-	path = /obj/item/clothing/head/beret/engineering
-	allowed_roles = list(JOBS_ENGINEERING)
-
-/datum/gear/head/beret/sec
-	display_name = "beret, red (security)"
-	path = /obj/item/clothing/head/beret/sec
-	allowed_roles = list(JOBS_SECURITY)
-
-/datum/gear/head/cap/flat
-	display_name = "cap, brown-flat"
-	path = /obj/item/clothing/head/flatcap
-
-/datum/gear/head/cap/corp
-	display_name = "cap, corporate (Security)"
-	path = /obj/item/clothing/head/soft/sec/corp
-	allowed_roles = list("Ironhammer Operative","Ironhammer Commander","Gunnery Sergeant", "Inspector")
-
-/datum/gear/head/cap/rainbow
-	display_name = "cap, rainbow"
-	path = /obj/item/clothing/head/soft/rainbow
-
-/datum/gear/head/cap/sec
-	display_name = "cap, security (Security)"
-	path = /obj/item/clothing/head/soft/sec
-	allowed_roles = list(JOBS_SECURITY)
-
-/datum/gear/head/cap/color_presets
-	display_name = "cap, color presets"
-	path = /obj/item/clothing/head/soft/blue
-
-/datum/gear/head/cap/color_presets/New()
-	..()
-	var/cap = list(
-		"White"			=	/obj/item/clothing/head/soft/mime,
-		"Grey"			=	/obj/item/clothing/head/soft/grey,
-		"Brown-Flat"	=	/obj/item/clothing/head/flatcap,
-		"Red"			=	/obj/item/clothing/head/soft/red,
-		"Orange"		=	/obj/item/clothing/head/soft/orange,
-		"Yellow"		=	/obj/item/clothing/head/soft/yellow,
-		"Green"			=	/obj/item/clothing/head/soft/green,
-		"Blue"			=	/obj/item/clothing/head/soft/blue,
-		"Blue Station"	=	/obj/item/clothing/head/mailman,
-		"Purple"		=	/obj/item/clothing/head/soft/purple,
-	)
-	gear_tweaks += new /datum/gear_tweak/path(cap)
-
-/datum/gear/head/hairflower
-	display_name = "hair flower pin, red"
-	path = /obj/item/clothing/head/hairflower
-
-/datum/gear/head/hardhat/color_presets
-	display_name = "hardhat, color presets"
-	path = /obj/item/clothing/head/hardhat/dblue
-	cost = 2
-
-/datum/gear/head/hardhat/color_presets/New()
-	..()
-	var/hardhat = list(
-		"Red"		=	/obj/item/clothing/head/hardhat/red,
-		"Orange"	=	/obj/item/clothing/head/hardhat/orange,
-		"Yellow"	=	/obj/item/clothing/head/hardhat,
-		"Blue"		=	/obj/item/clothing/head/hardhat/dblue,
-	)
-	gear_tweaks += new /datum/gear_tweak/path(hardhat)
+	flags = GEAR_HAS_TYPE_SELECTION
 
 /datum/gear/head/boater
-	display_name = "hat, boatsman"
+	display_name = "boater hat"
 	path = /obj/item/clothing/head/boaterhat
 
 /datum/gear/head/bowler
-	display_name = "hat, bowler"
+	display_name = "bowler hat selection"
 	path = /obj/item/clothing/head/bowler
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/head/cap
+	display_name = "cap selection"
+	path = /obj/item/clothing/head/soft/
+	flags = GEAR_HAS_TYPE_SELECTION
+/*
+/datum/gear/head/capcustom
+	display_name = "cap, customized"
+	path = /obj/item/clothing/head/customcap
+	slot = slot_head
+	flags = GEAR_HAS_COLOR_SELECTION
+*/
+/datum/gear/head/cowboy
+	display_name = "cowboy hat selection"
+	path = /obj/item/clothing/head/cowboy
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/head/fedora
+	display_name = "fedora selection"
+	path = /obj/item/clothing/head/fedora
+	flags = GEAR_HAS_TYPE_SELECTION
 
 /datum/gear/head/fez
-	display_name = "hat, fez"
+	display_name = "fez"
 	path = /obj/item/clothing/head/fez
 
-/datum/gear/head/tophat
-	display_name = "hat, tophat"
-	path = /obj/item/clothing/head/that
+/datum/gear/head/hardhat
+	display_name = "hardhat selection"
+	path = /obj/item/clothing/head/hardhat/
+	flags = GEAR_HAS_TYPE_SELECTION
 
-/datum/gear/head/philosopher_wig
-	display_name = "natural philosopher's wig"
-	path = /obj/item/clothing/head/philosopher_wig
-
-/datum/gear/head/ushanka
-	display_name = "ushanka"
-	path = /obj/item/clothing/head/ushanka
-
-/datum/gear/head/cap/secfield
-	display_name = "cap, IH field"
-	path = /obj/item/clothing/head/soft/sec2soft
-	allowed_roles = list("Ironhammer Operative","Ironhammer Commander","Ironhammer Gunnery Sergeant", "Inspector")
-
-/datum/gear/head/cap/sarge
-	display_name = "cap, IH sergeant"
-	path = /obj/item/clothing/head/soft/sarge2soft
-	allowed_roles = list("Ironhammer Commander","Ironhammer Gunnery Sergeant")
-
+/datum/gear/head/weldhelm
+	display_name = "welding helmet"
+	path = /obj/item/clothing/head/welding
 /*
-/datum/gear/head/cyberpunkgoggle
-	display_name = "Type-34C Semi-Enclosed Headwear"
-	path = /obj/item/clothing/head/armor/helmet/visor/cyberpunkgoggle
+/datum/gear/head/sombrero
+	display_name = "sombrero"
+	path = /obj/item/clothing/head/sombrero
+
+/datum/gear/head/tophat
+	display_name = "top hat selection"
+	path = /obj/item/clothing/head/tophat
+	flags = GEAR_HAS_TYPE_SELECTION
+*/
+/datum/gear/head/turban
+	display_name = "turban"
+	path = /obj/item/clothing/head/turban
+
+/datum/gear/head/fishbowl
+	display_name = "fishbowl helmet"
+	path = /obj/item/clothing/head/costume/misc/fishbowl
+
+/datum/gear/mask
+	display_name = "sterile mask"
+	path = /obj/item/clothing/mask/surgical
+	slot = slot_wear_mask
+	sort_category = "Hats and Headwear"
+
+/datum/gear/mask/bandana
+	display_name = "bandana mask selection"
+	path = /obj/item/clothing/mask/bandana
+	slot = slot_wear_mask
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/mask/gasmask
+	display_name = "gas mask"
+	path = /obj/item/clothing/mask/gas
+	slot = slot_wear_mask
+	cost = 2
+/*
+/datum/gear/mask/gasmaskenviro
+	display_name = "gas mask, enviro"
+	path = /obj/item/clothing/mask/gas/old
+	slot = slot_wear_mask
+	cost = 2
+
+/datum/gear/mask/gasmaskindustrial
+	display_name = "gas mask, industrial"
+	path = /obj/item/clothing/mask/gas/industrial
+	slot = slot_wear_mask
 	cost = 2
 */

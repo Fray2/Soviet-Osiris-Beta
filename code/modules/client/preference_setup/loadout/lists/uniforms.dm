@@ -1,105 +1,100 @@
 // Uniform slot
 /datum/gear/uniform
-	display_name = "blazer, blue"
-	path = /obj/item/clothing/under/blazer
+	display_name = "wedding dress"
+	path = /obj/item/clothing/under/bride_white
 	slot = slot_w_uniform
-	sort_category = "Униформа"
+	sort_category = "Uniforms and Casual Dress"
 
-/datum/gear/uniform/kilt
-	display_name = "kilt"
-	path = /obj/item/clothing/under/kilt
+/datum/gear/uniform/casualwear
+	display_name = "casualwear selection"
+	path = /obj/item/clothing/under/top
+	flags = GEAR_HAS_TYPE_SELECTION
 
-/datum/gear/uniform/jumpsuit/rainbow
-	display_name = "jumpsuit, rainbow"
-	path = /obj/item/clothing/under/rainbow
+/datum/gear/uniform/cheongsam
+	display_name = "cheongsam selection"
+	path = /obj/item/clothing/under/cheongsam
+	flags = GEAR_HAS_TYPE_SELECTION
 
-/datum/gear/uniform/jumpsuit/color_presets
-	display_name = "jumpsuit, color presets"
-	path = /obj/item/clothing/under/aqua
-	cost = 2
+/datum/gear/uniform/dress
+	display_name = "dress selection"
+	path = /obj/item/clothing/under/plaid
+	flags = GEAR_HAS_TYPE_SELECTION
 
-/datum/gear/uniform/jumpsuit/color_presets/New()
-	..()
-	var/jumpsuit = list(
-		"Black"			=	/obj/item/clothing/under/color/black,
-		"White"			=	/obj/item/clothing/under/color/white,
-		"Blue"			=	/obj/item/clothing/under/color/blue,
-		"Green"			=	/obj/item/clothing/under/color/green,
-		"Grey"			=	/obj/item/clothing/under/color/grey,
-		"Pink"			=	/obj/item/clothing/under/color/pink,
-		"Yellow"		=	/obj/item/clothing/under/color/yellow,
-		"Light-Blue"	=	/obj/item/clothing/under/lightblue,
-		"Red"			=	/obj/item/clothing/under/color/red,
-		"Aqua"			=	/obj/item/clothing/under/aqua,
-		"Purple"		=	/obj/item/clothing/under/purple,
-		"Light-Purple"	=	/obj/item/clothing/under/lightpurple,
-		"Light-Green"	=	/obj/item/clothing/under/lightgreen,
-		"Light-Brown"	=	/obj/item/clothing/under/lightbrown,
-		"Brown"			=	/obj/item/clothing/under/brown,
-		"Yellow-Green"	=	/obj/item/clothing/under/yellowgreen,
-		"Dark-Blue"		=	/obj/item/clothing/under/darkblue,
-		"Light-Red"		=	/obj/item/clothing/under/lightred,
-		"Dark-Red"		=	/obj/item/clothing/under/darkred,
-	)
-	gear_tweaks += new /datum/gear_tweak/path(jumpsuit)
+/datum/gear/uniform/gorkajumpsuit
+	display_name = "gorka jumpsuit selection"
+	path = /obj/item/clothing/under/gorka
+	flags = GEAR_HAS_TYPE_SELECTION
 
-/datum/gear/uniform/jumpsuit/colorable
-	display_name = "jumpsuit, colorable"
+/datum/gear/uniform/gorkapants
+	display_name = "gorka pants selection"
+	path = /obj/item/clothing/under/gorkapants
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/uniform/jeans
+	display_name = "jeans selection"
+	path = /obj/item/clothing/under/jeans
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/uniform/jumpsuit
+	display_name = "jumpsuit selection"
+	path = /obj/item/clothing/under/color
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/uniform/jumpsuit2
+	display_name = "jumpsuit, customized"
+	path = /obj/item/clothing/under/custom
 	flags = GEAR_HAS_COLOR_SELECTION
-	path = /obj/item/clothing/under/color/white
 
-/datum/gear/uniform/security_skirt
-	display_name = "jumpskirt, operative"
-	path = /obj/item/clothing/under/rank/security/skirt
-	allowed_roles = list("Ironhammer Operative")
+/datum/gear/uniform/jumpskirt
+	display_name = "jumpskirt selection"
+	path = /obj/item/clothing/under/colorskirt
+	flags = GEAR_HAS_TYPE_SELECTION
 
-/datum/gear/uniform/medspec_skirt
-	display_name = "jumpskirt, medical specialist"
-	path = /obj/item/clothing/under/rank/medspec/skirt
-	allowed_roles = list("Ironhammer Medical Specialist")
+/datum/gear/uniform/jumpskirt2
+	display_name = "jumpskirt, customized"
+	path = /obj/item/clothing/under/customskirt
+	flags = GEAR_HAS_TYPE_SELECTION
 
-/datum/gear/uniform/warden_skirt
-	display_name = "jumpskirt, warden"
-	path = /obj/item/clothing/under/rank/warden/skirt
-	allowed_roles = list("Ironhammer Gunnery Sergeant")
+/datum/gear/uniform/latex_maid
+	display_name = "latex maid dress"
+	path = /obj/item/clothing/under/costume/kinky/latex_maid
 
-/datum/gear/uniform/hos_skirt
-	display_name = "jumpskirt, commander"
-	path = /obj/item/clothing/under/rank/ih_commander/skirt
-	allowed_roles = list("Ironhammer Commander")
+/datum/gear/uniform/modularsuit
+	display_name = "modular suit selection"
+	path = /obj/item/clothing/under/modular
+	flags = GEAR_HAS_TYPE_SELECTION
 
-/*/datum/gear/uniform/skirt
-	display_name = "plaid skirt, blue"
-	path = /obj/item/clothing/under/dress/plaid_blue
-	cost = 49
+/datum/gear/uniform/onepiecesuit
+	display_name = "one piece suit selection"
+	path = /obj/item/clothing/under/suit_jacket
+	flags = GEAR_HAS_TYPE_SELECTION
 
-/datum/gear/uniform/skirt/purple
-	display_name = "plaid skirt, purple"
-	path = /obj/item/clothing/under/dress/plaid_purple
-	cost = 49
+/datum/gear/uniform/overalls
+	display_name = "overalls selection"
+	path = /obj/item/clothing/under/overalls
+	flags = GEAR_HAS_TYPE_SELECTION
 
-/datum/gear/uniform/skirt/red
-	display_name = "plaid skirt, red"
-	path = /obj/item/clothing/under/dress/plaid_red*/
+/datum/gear/uniform/pants
+	display_name = "pants selection"
+	path = /obj/item/clothing/under/pants
+	flags = GEAR_HAS_TYPE_SELECTION
 
-/*/datum/gear/uniform/suit  //amish
-	display_name = "suit, amish"
-	path = /obj/item/clothing/under/sl_suit*/
+/datum/gear/uniform/shorts
+	display_name = "shorts selection"
+	path = /obj/item/clothing/under/shorts
+	flags = GEAR_HAS_TYPE_SELECTION
 
-/datum/gear/uniform/scrubs/color_presets
-	display_name = "scrubs, color presets"
-	path = /obj/item/clothing/under/rank/medical/blue
+/datum/gear/uniform/skirt
+	display_name = "skirt selection"
+	path = /obj/item/clothing/under/skirt
+	flags = GEAR_HAS_TYPE_SELECTION
 
-/datum/gear/uniform/scrubs/color_presets/New()
-	..()
-	var/jumpsuit = list(
-		"Blue"			=	/obj/item/clothing/under/rank/medical/blue,
-		"Purple"		=	/obj/item/clothing/under/rank/medical/purple,
-		"Green"			=	/obj/item/clothing/under/rank/medical/green,
-	)
-	gear_tweaks += new /datum/gear_tweak/path(jumpsuit)
+/datum/gear/uniform/swimsuit
+	display_name = "swimsuit selection"
+	path = /obj/item/clothing/under/swimsuit
+	flags = GEAR_HAS_TYPE_SELECTION
 
-/*/datum/gear/uniform/uniform_hop
-	display_name = "uniform, HoP's dress"
-	path = /obj/item/clothing/under/dress/dress_hop
-	allowed_roles = list("First Officer")*/
+/datum/gear/uniform/turtleneck
+	display_name = "turtleneck selection"
+	path = /obj/item/clothing/under/turtleneck
+	flags = GEAR_HAS_TYPE_SELECTION
