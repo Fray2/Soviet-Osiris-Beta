@@ -21,6 +21,21 @@
 	permeability_coefficient = 0.05
 	price_tag = 200
 
+/obj/item/clothing/gloves/thick/swat
+	desc = "A pair of fire and impact-resistant security combat gloves."
+	name = "combat gloves"
+	icon_state = "ihscombat"
+	item_state = "ihscombat"
+	armor = list(
+		melee = 30,
+		bullet = 20,
+		energy = 20,
+		bomb = 25,
+		bio = 0,
+		rad = 0
+	)
+	price_tag = 300
+
 /obj/item/clothing/gloves/insulated/cheap                          //Cheap Chinese Crap
 	desc = "These gloves are cheap copies of the coveted gloves, no way this can end badly."
 	name = "budget insulated gloves"

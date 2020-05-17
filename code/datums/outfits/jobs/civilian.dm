@@ -32,8 +32,8 @@
 
 /decl/hierarchy/outfit/job/service/gardener
 	name = OUTFIT_JOB_NAME("Lonestar - Gardener")
-	uniform = /obj/item/clothing/under/rank/botanist
-	suit = /obj/item/clothing/suit/rank/botanist
+	uniform = /obj/item/clothing/under/rank/janitor
+	suit = /obj/item/clothing/suit/apron
 	gloves = /obj/item/clothing/gloves/botanic_leather
 	r_pocket = /obj/item/device/scanner/plant
 	id_type = /obj/item/weapon/card/id/hydro

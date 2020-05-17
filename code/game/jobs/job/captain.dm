@@ -1,6 +1,6 @@
 var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
-/datum/job/captain
+/datum/job/premier
 	title = "Premier"
 	title_ru = "Премьер"
 	flag = PREMIER
@@ -60,10 +60,62 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 /obj/landmark/join/start/captain
 	name = "Captain"
 	icon_state = "player-gold-officer"
-	join_tag = /datum/job/captain
+	join_tag = /datum/job/premier
+
+/datum/job/pg
+	title = "Steward"
+	flag = STEWARD
+	department = DEPARTMENT_COMMAND
+	head_position = 1
+	department_flag = COMMAND
+	faction = MAP_FACTION
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Premier"
+//	difficulty = "Hard."
+	selection_color = "#ddddff"
+	req_admin_notify = 1
+	wage = WAGE_COMMAND
+	also_known_languages = list(LANGUAGE_CYRILLIC = 20, LANGUAGE_SERBIAN = 15)
+	ideal_character_age = 35
+	minimum_character_age = 25
+
+	description = "Вы правая рука Премьер-Министра. Вы целиком и полностью ему лояльны и фактически - являетесь его личной охраной.<br>\
+	Ваша задача любой ценой защитить Премьера. Вы не должны бояться умереть за него, ведь это одна из ваших задач. <br>\
+	В любом случае, Вы так же являетесь и его советником. Осторожно сообщите ему об ошибках. Убедитесь, что он следует закону и все ещё получает поддержку народа.<br>\
+	Вы так же выполняете любой его приказ, не смотря на его сложность или абсурдность.<br>\
+	Не позорьте его и не портите его отношения с другими фракциями. Чаще следите за своими словами."
+
+	duties = "Вы в праве отыгрывать как настоящего охранника Премьер-Министра, так и его советника.<br>\
+	Выполняй задания данные тебе министром, такие как заполнение документов или переназначение должностей.<br>\
+	Продемонстрируй истинную преданность и не подведи своего начальника."
+
+	outfit_type = /decl/hierarchy/outfit/job/hop
+
+	software_on_spawn = list(/datum/computer_file/program/comm,
+							 /datum/computer_file/program/card_mod,
+							 /datum/computer_file/program/camera_monitor,
+							 /datum/computer_file/program/reports)
 
 
+	get_access()
+		return get_all_station_access()
 
+	stat_modifiers = list(
+		STAT_VIG = 35,
+		STAT_TGH = 30,
+		STAT_ROB = 25,
+		STAT_BIO = 25,
+		STAT_MEC = 25,
+		STAT_COG = 25
+	)
+
+/obj/landmark/join/start/pg
+	name = "Steward"
+	icon_state = "player-gold"
+	join_tag = /datum/job/pg
+
+/*
 /datum/job/hop
 	title = "First Officer"
 	title_ru = "Старший Помощник"
@@ -128,7 +180,7 @@ Act as the captain's sidekick, bodyguard, and last line of defense in a crisis o
 	icon_state = "player-gold"
 	join_tag = /datum/job/hop
 
-/*
+
 /datum/job/commissioner
 	title = "Commissioner"
 	title_ru = "Комиссар"

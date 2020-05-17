@@ -118,6 +118,7 @@ var/const/MED_FREQ = 1355
 var/const/SCI_FREQ = 1351
 var/const/SRV_FREQ = 1349
 var/const/SUP_FREQ = 1347
+var/const/PRO_FREQ = 1345
 
 
 // internal department channels
@@ -138,7 +139,8 @@ var/list/radiochannels = list(
 	"Service" 		= SRV_FREQ,
 	"AI Private"	= AI_FREQ,
 	"Medical(I)"	= MED_I_FREQ,
-	"Security(I)"	= SEC_I_FREQ
+	"Security(I)"	= SEC_I_FREQ,
+	"Prospectors"	= PRO_FREQ
 )
 
 // central command channels, i.e deathsquid
