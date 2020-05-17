@@ -64,7 +64,7 @@
 	else
 		new_overlays += "[initial(icon_state)]-nocell"
 
-	copy_overlays(new_overlays, TRUE)
+	overlays = new_overlays
 
 /obj/item/device/defib_kit/ui_action_click()
 	toggle_paddles()
@@ -244,7 +244,7 @@
 
 /obj/item/weapon/shockpaddles/update_wear_icon()
 	var/mob/living/M = loc
-	if(istype(M) && M.is_holding(src) && !M.hands_are_full())
+	if(istype(M) && (M.get_active_hand() == src || M.get_inactive_hand() == src) && !(M.get_active_hand() == src && M.get_inactive_hand() == src))
 		wieldedm = 1
 		name = "[initial(name)] (wielded)"
 	else
@@ -440,7 +440,7 @@
 	if(H.isSynthetic())
 		H.adjustToxLoss(-H.getToxLoss())
 
-	H.apply_damage(burn_damage_amt, BURN, BP_TORSO)
+	H.apply_damage(burn_damage_amt, BURN, BP_CHEST)
 
 	error = can_revive(H)
 	if(error)
@@ -489,7 +489,7 @@
 
 	H.stun_effect_act(2, 120, target_zone)
 	var/burn_damage = H.electrocute_act(burn_damage_amt*2, src, def_zone = target_zone)
-	if(burn_damage > 15 && H.can_feel_pain())
+	if(burn_damage > 15 && !(H.species.flags & NO_PAIN))
 		H.emote("scream")
 
 	log_attack("[user.name]/([user.ckey]) shocked [H.name] ([H.ckey]) using [name]")
