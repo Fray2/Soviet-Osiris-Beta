@@ -186,7 +186,6 @@
 	home_waypoint = "nav_merc_start"
 	arrival_message = "Attention, unidentified vessel detected on long range sensors. \nVessel is approaching on an intercept course. \nHailing frequencies open."
 	departure_message = "Attention, unknown vessel has departed"
-
 /*
 //This fires, and the mission timer starts ticking, as soon as they leave Eris on course to the mercenary base
 /datum/shuttle/autodock/multi/antag/mercenary/announce_departure()
@@ -204,7 +203,6 @@
 	if (MO)
 		MO.start_mission()
 */
-
 //Docking controller chooses which of our airlocks should open onto the target location.
 //Merc ship has only one airlock, so set that here
 /obj/effect/shuttle_landmark/merc
