@@ -1,13 +1,17 @@
 //Caliber Defines
-#define CAL_357 ".357"
-#define CAL_CLRIFLE ".25 Caseless"
-#define CAL_SRIFLE ".20"
 #define CAL_PISTOL ".35"
 #define CAL_35A ".35 auto"
-#define CAL_LRIFLE ".30"
+#define CAL_357 ".357"
+#define CAL_LRIFLE ".257 carbine"
+#define CAL_RIFLE "7.5mm rifle"
+#define CAL_CLRIFLE ".25 Caseless"
+#define CAL_SRIFLE ".20"
+#define CAL_HRIFLE ".408 heavy rifle"
+#define CAL_35A ".35 auto"
 #define CAL_MAGNUM ".40 magnum"
-#define CAL_ANTIM ".60 Anti Material"
+#define CAL_ANTIM ".60-06 Anti Material"
 #define CAL_SHOTGUN "Shotgun Shell"
+#define CAL_50	".50 kurtz"
 #define CAL_70 ".70"
 #define CAL_CAP "plastic cap"
 #define CAL_ROCKET "rocket propelled grenade"
@@ -24,7 +28,11 @@
 #define MAG_WELL_H_PISTOL	4	//High cap Pistols
 #define MAG_WELL_SMG		8	//smgs
 #define MAG_WELL_RIFLE		16	//Normal non-IH rifles
-#define MAG_WELL_IH			32	//IH guns
+#define MAG_WELL_STANMAG	32	//.257 standard
 #define MAG_WELL_BOX		64	//Lmgs with box mags
 #define MAG_WELL_PAN		128	//Lmgs with pan mags
 #define MAG_WELL_DART       256 //Dartgun mag
+#define MAG_WELL_HRIFLE		512 //.408 rifle mags
+#define MAG_WELL_DRUM		1024 //Drum-fed i.e. shotguns
+#define MAG_WELL_PULSE		2048 //Mary sue ammo for the pulse rifle
+#define MAG_WELL_IH			4096 //IH guns

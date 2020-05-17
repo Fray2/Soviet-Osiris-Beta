@@ -154,6 +154,33 @@
 	item_state = "insp_coat"
 	blood_overlay_type = "coat"
 
+/obj/item/clothing/suit/storage/rank/insp_trench
+	name = "ranger's armored trenchcoat"
+	desc = "Brown and armored trenchcoat, designed and created by Security. The coat is externally impact resistant - perfect for your next act of autodefenestration!"
+	icon_state = "rangercoat"
+	item_state = "rangercoat"
+	blood_overlay_type = "coat"
+	body_parts_covered = UPPER_TORSO|ARMS
+	armor = list(melee = 40, bullet = 25, energy = 25, bomb = 0, bio = 0, rad = 0)
+	price_tag = 250
+
+/obj/item/clothing/suit/storage/rank/det_trench
+	name = "brown trenchcoat"
+	desc = "A rugged canvas trenchcoat, designed and created by TX Fabrication Corp. The coat is externally impact resistant - perfect for your next act of autodefenestration!"
+	icon_state = "detective"
+	item_state = "det_suit"
+	blood_overlay_type = "coat"
+	body_parts_covered = UPPER_TORSO|ARMS
+	armor = list(
+		melee = 30,
+		bullet = 20,
+		energy = 20,
+		bomb = 0,
+		bio = 0,
+		rad = 0
+	)
+	price_tag = 250
+
 //Engineering
 /obj/item/clothing/suit/storage/hazardvest
 	name = "hazard vest"

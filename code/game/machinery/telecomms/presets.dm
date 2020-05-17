@@ -10,6 +10,10 @@
 	listening_levels = list(1,2,3,4,5)
 	autolinkers = list("s_relay")
 
+/obj/machinery/telecomms/server/presets/prospector
+	id = "prospector server"
+	autolinkers = list("prospector")
+
 /obj/machinery/telecomms/relay/preset/telecomms
 	id = "Telecomms Relay"
 	autolinkers = list("relay")

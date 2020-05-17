@@ -375,7 +375,20 @@
 		/datum/design/autolathe/circuit/biogen_port,
 		/datum/design/autolathe/circuit/biogen_console,
 	)
+/*
+/obj/item/weapon/computer_hardware/hard_drive/portable/design/nt_bioaugment
+	disk_name = "Church of Absolute Bioaugmentation Disk"
+	desc = "This disk is sole property of the church, the files within are encrypted and should not be used, taken, or tested by anyone not affiliated with the Absolute."
+	icon_state = "neotheology"
 
+	license = -1
+	designs = list(
+		/datum/design/bioprinter/bioimplant/osurgical,
+		/datum/design/bioprinter/bioimplant/oscythe,
+		/datum/design/bioprinter/bioimplant/oarmor,
+		/datum/design/bioprinter/bioimplant/omuscle,
+	)
+*/
 // Ironhammer
 /obj/item/weapon/computer_hardware/hard_drive/portable/design/security
 	disk_name = "Ironhammer Miscellaneous Pack"
@@ -407,7 +420,32 @@
 		/datum/design/autolathe/tool/drill_onestar,
 		/datum/design/autolathe/tool/weldertool_onestar
 	)
+/*
+/obj/item/weapon/computer_hardware/hard_drive/portable/design/blackshield
+	disk_name = "Blackshield Sovereignty Pack"
+	icon_state = "onestar"
+	license = 20
 
+	designs = list(
+		/datum/design/autolathe/gun/ten_dark,
+		/datum/design/autolathe/gun/ladon,
+ 		/datum/design/autolathe/gun/naga,
+ 		/datum/design/autolathe/ammo/magnum,
+ 		/datum/design/autolathe/ammo/magnum_lethal,
+ 		/datum/design/autolathe/ammo/kurtz,
+ 		/datum/design/autolathe/ammo/kurtz_lethal,
+		/datum/design/autolathe/gun/omnirifle,//rifles
+		/datum/design/autolathe/gun/standard_omnirifle,
+		/datum/design/autolathe/gun/omnicarbine,
+		/datum/design/autolathe/gun/sts40,
+		/datum/design/autolathe/gun/rds_omnicarbine,
+		/datum/design/autolathe/device/gps,//misc gear
+		/datum/design/autolathe/misc/heavyflashlight,
+		/datum/design/autolathe/tool/tacknife,
+		/datum/design/autolathe/sec/beartrap,
+
+		)
+*/
 // Magazines and ammo
 
 /obj/item/weapon/computer_hardware/hard_drive/portable/design/nonlethal_ammo //please, maintain general order (pistol>speedloaders>smg>other>shells)+(smaller/less damaging caliber>bigger/more damaging caliber)

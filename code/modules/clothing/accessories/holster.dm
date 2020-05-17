@@ -1,18 +1,27 @@
 /obj/item/clothing/accessory/holster
 	name = "shoulder holster"
-	desc = "A handgun holster."
+	desc = "A leather weapon holster mounted around the shoulder."
 	icon_state = "holster"
 	slot = "utility"
 	matter = list(MATERIAL_BIOMATTER = 5)
 	price_tag = 200
 	var/obj/item/holstered = null
+	var/sound_in = 'sound/effects/holsterin.ogg'
+	var/sound_out = 'sound/effects/holsterout.ogg'
+	var/list/can_hold
 
 /obj/item/clothing/accessory/holster/proc/holster(var/obj/item/I, var/mob/living/user)
 	if(holstered && istype(user))
 		to_chat(user, SPAN_WARNING("There is already \a [holstered] holstered here!"))
 		return
 
-	if (!(I.slot_flags & SLOT_HOLSTER))
+	if (LAZYLEN(can_hold))
+		if(!is_type_in_list(I,can_hold))
+			to_chat(user, "<span class='warning'>[I] won't fit in [src]!</span>")
+			return
+
+
+	else if (!(I.slot_flags & SLOT_HOLSTER))
 		to_chat(user, SPAN_WARNING("[I] won't fit in [src]!"))
 		return
 
@@ -23,6 +32,8 @@
 	w_class = max(w_class, holstered.w_class)
 	user.visible_message(SPAN_NOTICE("[user] holsters \the [holstered]."), SPAN_NOTICE("You holster \the [holstered]."))
 	name = "occupied [initial(name)]"
+	playsound(user, "[sound_in]", 75, 0)
+	update_icon()
 
 /obj/item/clothing/accessory/holster/proc/clear_holster()
 	holstered = null
@@ -37,8 +48,8 @@
 	else
 		if(user.a_intent == I_HURT)
 			usr.visible_message(
-				SPAN_DANGER("[user] draws \the [holstered], ready to shoot!"),
-				SPAN_WARNING("You draw \the [holstered], ready to shoot!")
+				SPAN_DANGER("[user] draws \the [holstered], ready to fight!"),
+				SPAN_WARNING("You draw \the [holstered], ready to fight!")
 				)
 		else
 			user.visible_message(
@@ -47,6 +58,8 @@
 				)
 		user.put_in_hands(holstered)
 		holstered.add_fingerprint(user)
+		playsound(user, "[sound_out]", 75, 0)
+		update_icon()
 		w_class = initial(w_class)
 		clear_holster()
 
@@ -85,7 +98,6 @@
 /obj/item/clothing/accessory/holster/verb/holster_verb()
 	set name = "Holster"
 	set category = "Object"
-	set hidden = TRUE
 	set src in usr
 	if(!isliving(usr))
 		return
@@ -115,18 +127,18 @@
 
 /obj/item/clothing/accessory/holster/armpit
 	name = "armpit holster"
-	desc = "A worn-out handgun holster. Perfect for concealed carry."
+	desc = "A leather weapon holster mounted around the armpit."
 	icon_state = "holster"
 
 /obj/item/clothing/accessory/holster/waist
 	name = "waist holster"
-	desc = "A handgun holster. Made of expensive leather."
+	desc = "A leather weapon holster mounted around the waist."
 	icon_state = "holster"
 	overlay_state = "holster_low"
 
 /obj/item/clothing/accessory/holster/hip
 	name = "hip holster"
-	desc = "A handgun holster slung low on the hip, draw pardner!"
+	desc = "A leather weapon holster mounted around the hip."
 	icon_state = "holster_hip"
 
 /obj/item/clothing/accessory/holster/leg
@@ -139,8 +151,7 @@
 /*
 Sword holsters
 */
-//DISABLED UNTIL SWORDS ARE ADDED
-/*
+
 /obj/item/clothing/accessory/holster/saber
 	name = "saber scabbard"
 	desc = "A white leather weapon sheath mounted around the waist."
@@ -235,4 +246,4 @@ Sword holsters
 
 /obj/item/clothing/accessory/holster/saber/cutlass/occupied/Initialize()
 	holstered = new holstered_spawn
-*/
+

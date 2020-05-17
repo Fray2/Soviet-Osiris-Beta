@@ -38,6 +38,17 @@ There are important things regarding this file:
 	embed = FALSE
 	sharp = FALSE
 
+/obj/item/projectile/bullet/pistol/lethal
+	name = "hollow-point bullet"
+	damage = 20
+	agony = 20
+	armor_penetration = 10
+	penetrating = 0
+	can_ricochet = FALSE
+	embed = TRUE
+	sharp = TRUE
+	step_delay = 0.55
+
 //Carbines and rifles
 
 // .20 rifle
@@ -108,6 +119,55 @@ There are important things regarding this file:
 	sharp = FALSE
 	can_ricochet = TRUE
 
+/// .50 Kurtz ///
+obj/item/projectile/bullet/kurtz
+	damage = 36
+	armor_penetration = 10
+	can_ricochet = TRUE
+	step_delay = 0.75
+
+/obj/item/projectile/bullet/kurtz/rubber
+	name = "rubber bullet"
+	damage = 8
+	agony = 32
+	check_armour = ARMOR_MELEE
+	armor_penetration = 0
+	embed = FALSE
+	sharp = FALSE
+	can_ricochet = TRUE
+	step_delay = 0.9
+
+/obj/item/projectile/bullet/kurtz/practice
+	name = "practice bullet"
+	damage = 2
+	agony = 3
+	armor_penetration = 0
+	embed = FALSE
+	sharp = FALSE
+	can_ricochet = FALSE
+	step_delay = 0.75
+
+/obj/item/projectile/bullet/kurtz/lethal
+	name = "hollow-point bullet"
+	damage = 32
+	agony = 32
+	armor_penetration = 5
+	penetrating = 0
+	can_ricochet = FALSE
+	embed = TRUE
+	sharp = TRUE
+	step_delay = 0.8
+
+/obj/item/projectile/bullet/kurtz/hv
+	name = "AP bullet"
+	damage = 25
+	armor_penetration = 20
+	penetrating = 2
+	can_ricochet = FALSE
+	embed = TRUE
+	sharp = TRUE
+	step_delay = 0.5
+
 // .30 rifle
 
 /obj/item/projectile/bullet/lrifle
@@ -139,6 +199,125 @@ There are important things regarding this file:
 	embed = FALSE
 	sharp = FALSE
 
+/obj/item/projectile/bullet/lrifle/lethal
+	name = "hollow-point bullet"
+	damage = 18
+	agony = 20
+	armor_penetration = 10
+	penetrating = 0
+	can_ricochet = FALSE
+	embed = TRUE
+	sharp = TRUE
+	step_delay = 0.6
+
+/obj/item/projectile/bullet/lrifle/nomuzzle
+	muzzle_type = null
+
+///7.5 Rifle///
+
+/obj/item/projectile/bullet/rifle
+	damage = 28
+	armor_penetration = 24
+	penetrating = 1
+	can_ricochet = TRUE
+	step_delay = 0.5
+
+/obj/item/projectile/bullet/rifle/hv
+	damage = 25
+	armor_penetration = 30
+	penetrating = 2
+	can_ricochet = TRUE
+	step_delay = 0.3
+
+/obj/item/projectile/bullet/rifle/practice
+	name = "practice bullet"
+	damage = 2
+	agony = 2
+	armor_penetration = 0
+	embed = FALSE
+	sharp = FALSE
+	can_ricochet = FALSE
+
+/obj/item/projectile/bullet/rifle/rubber
+	name = "rubber bullet"
+	damage = 4
+	agony = 26
+	check_armour = ARMOR_MELEE
+	armor_penetration = 0
+	embed = FALSE
+	sharp = FALSE
+	can_ricochet = TRUE
+	step_delay = 0.9
+
+/obj/item/projectile/bullet/rifle/lethal
+	name = "hollow-point bullet"
+	damage = 23
+	agony = 28
+	armor_penetration = 10
+	penetrating = 0
+	can_ricochet = FALSE
+	embed = TRUE
+	sharp = TRUE
+	step_delay = 0.8
+
+/// .408 OMNI ///
+
+/obj/item/projectile/bullet/hrifle
+	damage = 28
+	armor_penetration = 30
+	penetrating = 2
+	can_ricochet = TRUE
+	step_delay = 0.3
+
+/obj/item/projectile/bullet/hrifle/rubber
+	name = "rubber bullet"
+	damage = 8
+	agony = 32
+	check_armour = ARMOR_MELEE
+	armor_penetration = 0
+	embed = FALSE
+	sharp = FALSE
+	can_ricochet = TRUE
+	step_delay = 0.9
+
+/obj/item/projectile/bullet/hrifle/practice
+	name = "practice bullet"
+	damage = 2
+	agony = 2
+	armor_penetration = 0
+	embed = FALSE
+	sharp = FALSE
+	can_ricochet = FALSE
+	step_delay = 0.5
+
+/obj/item/projectile/bullet/hrifle/hv
+	name = "sabot penetrator"
+	damage = 24
+	armor_penetration = 40
+	penetrating = 3
+	hitscan = TRUE
+
+/obj/item/projectile/bullet/hrifle/lethal
+	name = "hollow-point bullet"
+	damage = 32
+	agony = 32
+	armor_penetration = 10
+	penetrating = 0
+	can_ricochet = FALSE
+	embed = TRUE
+	sharp = TRUE
+	step_delay = 0.5
+
+///Snowflake caseless///
+
+/obj/item/projectile/bullet/c10x24
+	damage = 16
+	armor_penetration = 25
+	penetrating = 2
+	can_ricochet = TRUE
+	sharp = TRUE
+	step_delay = 0.3
+
 //Revolvers and high-caliber pistols .40
 /obj/item/projectile/bullet/magnum
 	damage = 32
@@ -167,6 +346,17 @@ There are important things regarding this file:
 	armor_penetration = 0
 	embed = FALSE
 	sharp = FALSE
+
+/obj/item/projectile/bullet/magnum/lethal
+	name = "hollow-point bullet"
+	damage = 26
+	agony = 32
+	armor_penetration = 8
+	penetrating = 0
+	can_ricochet = FALSE
+	embed = TRUE
+	sharp = TRUE
+	step_delay = 0.5
 
 //Sniper rifles .60
 /obj/item/projectile/bullet/antim

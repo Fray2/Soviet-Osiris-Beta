@@ -25,7 +25,7 @@
 /decl/hierarchy/outfit/job/security/gunserg
 	name = OUTFIT_JOB_NAME("Ironhammer Gunnery Sergeant")
 	uniform = /obj/item/clothing/under/rank/warden
-	head = /obj/item/clothing/head/beret/sec/navy/warden
+//	head = /obj/item/clothing/head/beret/sec/navy/warden
 	belt = /obj/item/weapon/gun/energy/gun/martin
 	backpack_contents = list(/obj/item/weapon/cell/small/high = 1)
 

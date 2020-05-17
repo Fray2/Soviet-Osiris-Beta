@@ -116,3 +116,27 @@
 	name = "moebius psychologist's turtleneck"
 	icon_state = "psychturtle"
 	item_state = "b_suit"
+
+/obj/item/clothing/under/scrubs
+	name = "blue scrubs"
+	desc = "A sterile blue uniform designed to protect against contamination."
+	icon_state = "scrubsblue"
+	item_state = "b_suit"
+
+/obj/item/clothing/under/scrubs/green
+	name = "green scrubs"
+	desc = "A sterile green uniform designed to protect against contamination."
+	icon_state = "scrubsgreen"
+	item_state = "g_suit"
+
+/obj/item/clothing/under/scrubs/purple
+	name = "purple scrubs"
+	desc = "A sterile purple uniform designed to protect against contamination."
+	icon_state = "scrubspurple"
+	item_state = "p_suit"
+
+/obj/item/clothing/under/rank/psych
+	desc = "A calming turquoise turtleneck combined with dark blue slacks."
+	name = "soteria psychologist's turtleneck"
+	icon_state = "psychturtle"
+	item_state = "b_suit"
