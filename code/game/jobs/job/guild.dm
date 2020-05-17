@@ -3,7 +3,7 @@
 	title = "Guild Merchant"
 	title_ru = "Торговец"
 	flag = MERCHANT
-	department = DEPARTMENT_GUILD
+	department = DEPARTMENT_LSS
 	head_position = 1
 	department_flag = GUILD | COMMAND
 	faction = "CEV Eris"
@@ -67,7 +67,7 @@ Your second loyalty is to the guild. Ensure it retains good relations with priva
 	title = "Guild Technician"
 	title_ru = "Техник"
 	flag = GUILDTECH
-	department = DEPARTMENT_GUILD
+	department = DEPARTMENT_LSS
 	department_flag = GUILD
 	faction = "CEV Eris"
 	total_positions = 3
@@ -119,7 +119,7 @@ Your main duties are to keep the local guild branch operational and profitable. 
 	title = "Guild Miner"
 	title_ru = "Шахтер"
 	flag = MINER
-	department = DEPARTMENT_GUILD
+	department = DEPARTMENT_LSS
 	department_flag = GUILD
 	faction = "CEV Eris"
 	total_positions = 4
