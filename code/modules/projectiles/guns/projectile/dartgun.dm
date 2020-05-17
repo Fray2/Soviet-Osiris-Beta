@@ -43,10 +43,11 @@
 	mag_well = MAG_WELL_DART
 
 /obj/item/weapon/gun/projectile/dartgun
-	name = "Z-H P Artemis"
-	desc = "Zeng-Hu Pharmaceutical's entry into the arms market, the Z-H P Artemis is a gas-powered dart gun capable of delivering chemical cocktails swiftly across short distances."
+	name = "SI \"Artemis\""
+	desc = "The Soteria Institute's entry into the arms market, the SI Artemis is a gas-powered dart gun capable of delivering chemical cocktails swiftly across short distances."
 	icon = 'icons/obj/guns/projectile/dartgun.dmi'
 	icon_state = "dartgun-empty"
+	item_state = null
 
 	caliber = CAL_DART
 	fire_sound = 'sound/weapons/empty.ogg'
@@ -66,7 +67,7 @@
 	var/beaker_type = /obj/item/weapon/reagent_containers/glass/beaker
 	var/list/starting_chems = null
 
-/obj/item/weapon/gun/projectile/dartgun/New()
+/obj/item/weapon/gun/projectile/dartgun/dartgun/New()
 	..()
 	if(starting_chems)
 		for(var/chem in starting_chems)
@@ -192,3 +193,13 @@
 		unload_ammo(usr)
 	src.updateUsrDialog()
 	return
+
+/obj/item/weapon/gun/projectile/dartgun/vox
+	name = "alien dart gun"
+	desc = "A small gas-powered dartgun, fitted for nonhuman hands."
+
+/obj/item/weapon/gun/projectile/dartgun/vox/medical
+	starting_chems = list("kelotane","bicaridine","anti_toxin")
+
+/obj/item/weapon/gun/projectile/dartgun/vox/raider
+	starting_chems = list("space_drugs","stoxin","impedrezene")
