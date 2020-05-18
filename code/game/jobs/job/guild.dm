@@ -3,9 +3,9 @@
 	title = "Guild Merchant"
 	title_ru = "Торговец"
 	flag = MERCHANT
-	department = DEPARTMENT_GUILD
+	department = DEPARTMENT_LSS
 	head_position = 1
-	department_flag = GUILD | COMMAND
+	department_flag = LSS | COMMAND
 	faction = "CEV Eris"
 	total_positions = 1
 	spawn_positions = 1
@@ -66,9 +66,9 @@ Your second loyalty is to the guild. Ensure it retains good relations with priva
 /datum/job/cargo_tech
 	title = "Guild Technician"
 	title_ru = "Техник"
-	flag = GUILDTECH
-	department = DEPARTMENT_GUILD
-	department_flag = GUILD
+	flag = LSS
+	department = DEPARTMENT_LSS
+	department_flag = LSS
 	faction = "CEV Eris"
 	total_positions = 3
 	spawn_positions = 3
@@ -119,8 +119,8 @@ Your main duties are to keep the local guild branch operational and profitable. 
 	title = "Guild Miner"
 	title_ru = "Шахтер"
 	flag = MINER
-	department = DEPARTMENT_GUILD
-	department_flag = GUILD
+	department = DEPARTMENT_LSS
+	department_flag = LSS
 	faction = "CEV Eris"
 	total_positions = 4
 	spawn_positions = 4

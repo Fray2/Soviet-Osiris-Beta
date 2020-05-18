@@ -288,3 +288,5 @@
 #define FOURSPACES "&nbsp;&nbsp;&nbsp;&nbsp;"
 
 #define CURSOR_PICKUP 'icons/cursors/pickup.dmi'
+
+#define MAP_FACTION "Nadezhda"

@@ -11,6 +11,43 @@
 	..()
 	BACKPACK_OVERRIDE_SECURITY
 
+/decl/hierarchy/outfit/job/security/swo
+	name = OUTFIT_JOB_NAME("Marshal - Warrant Officer")
+	l_ear = /obj/item/device/radio/headset/heads/hos
+	uniform = /obj/item/clothing/under/rank/ih_commander
+	suit = /obj/item/clothing/suit/armor/hos
+	l_pocket = /obj/item/device/flash
+	gloves = /obj/item/clothing/gloves/stungloves
+	glasses = /obj/item/clothing/glasses/sunglasses/sechud/tactical
+	belt = /obj/item/weapon/gun/projectile/lamia
+	id_type = /obj/item/weapon/card/id/hos
+	head = /obj/item/clothing/head/rank/commander
+	pda_type = /obj/item/modular_computer/pda/heads/hos
+	backpack_contents = list(/obj/item/weapon/handcuffs = 1,/obj/item/ammo_magazine/kurtz/rubber = 2,/obj/item/device/lighting/toggleable/flashlight/seclite = 1, /obj/item/weapon/cell/small/high = 2, /obj/item/weapon/gun/energy/gun/martin = 1)
+
+/decl/hierarchy/outfit/job/security/smc
+	name = OUTFIT_JOB_NAME("Blackshield - Militia Commander")
+	l_ear = /obj/item/device/radio/headset/heads/hos
+	uniform = /obj/item/clothing/under/rank/commander
+	suit = /obj/item/clothing/suit/armor/commander/militia
+	l_pocket = /obj/item/device/flash
+	gloves = /obj/item/clothing/gloves/stungloves
+	glasses = /obj/item/clothing/glasses/ballistic
+	belt = /obj/item/weapon/gun/projectile/lamia
+	id_type = /obj/item/weapon/card/id/hos
+	head = /obj/item/clothing/head/rank/milcom/beret
+	pda_type = /obj/item/modular_computer/pda/heads/hos
+	backpack_contents = list(/obj/item/weapon/handcuffs = 1,/obj/item/ammo_magazine/kurtz = 2,/obj/item/device/lighting/toggleable/flashlight/seclite = 1, /obj/item/weapon/cell/small/high = 2, /obj/item/weapon/gun/energy/gun/martin = 1)
+
+/decl/hierarchy/outfit/job/security/serg
+	name = OUTFIT_JOB_NAME("Blackshield - Sergeant")
+	uniform = /obj/item/clothing/under/instructor
+	head = /obj/item/clothing/head/rank/instructor_hat
+	glasses = /obj/item/clothing/glasses/ballistic
+	l_pocket = /obj/item/device/flash
+	gloves = /obj/item/clothing/gloves/thick
+	backpack_contents = list(/obj/item/weapon/handcuffs = 1, /obj/item/device/lighting/toggleable/flashlight/seclite = 1, /obj/item/weapon/cell/small/high = 2, /obj/item/weapon/gun/energy/gun/martin = 1)
+
 /decl/hierarchy/outfit/job/security/ihc
 	name = OUTFIT_JOB_NAME("Ironhammer Commander")
 	l_ear = /obj/item/device/radio/headset/heads/hos
@@ -58,3 +95,13 @@
 	uniform = /obj/item/clothing/under/rank/security
 	belt = /obj/item/weapon/gun/energy/gun/martin
 	backpack_contents = list(/obj/item/weapon/cell/small/high = 1)
+
+/decl/hierarchy/outfit/job/security/troop
+	name = OUTFIT_JOB_NAME("Blackshield - Trooper")
+	l_pocket = /obj/item/device/flash
+	uniform = /obj/item/clothing/under/rank/trooper
+	mask = /obj/item/clothing/mask/balaclava/tactical
+	glasses = /obj/item/clothing/glasses/ballistic
+	head = /obj/item/clothing/head/rank/trooper/cap
+	gloves = /obj/item/clothing/gloves/thick/swat
+	backpack_contents = list(/obj/item/weapon/handcuffs = 1, /obj/item/device/lighting/toggleable/flashlight/seclite = 1, /obj/item/weapon/cell/small/high = 2, /obj/item/weapon/gun/energy/gun/martin = 1, /obj/item/weapon/tool/knife/tacknife = 1)
