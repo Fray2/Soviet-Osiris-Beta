@@ -1,9 +1,7 @@
 #include "overmap-eris.dm"
 #include "shuttles-eris.dm"
 #include "../encounters/deeptunnels/deeptunnels.dm"
-#include "_Nadezhda_Colony_Underground.dmm"
-#include "_Nadezhda_Colony_Transition.dmm"
-#include "_Nadezhda_Colony_Surface.dmm"
+#include "_Nadezhda_Colony.dmm"
 #include "../encounters/deepforest/deepforest.dm"
 #include "../encounters/spacefortress/spacefortress.dm"
 #include "centcomm.dmm"
@@ -29,7 +27,7 @@
 	is_contact_level = TRUE
 	is_accessable_level = FALSE
 	is_sealed = TRUE
-	height = 2
+	height = 6
 
 /obj/map_data/nadezda_e
 	name = "Nadezhda Elevator and Stairs"

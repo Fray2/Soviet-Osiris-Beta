@@ -1,11 +1,10 @@
 /datum/antagonist/proc/create_objectives(var/survive = FALSE)
+	if(survive)
+		create_survive_objective()
 
 	if(!possible_objectives || !possible_objectives.len)
 		return
 	pick_objectives(src, possible_objectives, objective_quantity)
-
-	if(survive)
-		create_survive_objective()
 
 
 // used only for factions antagonists

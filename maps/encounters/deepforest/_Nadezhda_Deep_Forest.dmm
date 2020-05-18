@@ -8,7 +8,7 @@
 "ah" = (/obj/structure/flora/small/bushb2,/obj/structure/flora/big/bush1,/turf/unsimulated/wall/jungle,/area/nadezhda/outside/forest)
 "ai" = (/obj/structure/closet/onestar/tier3/medical,/turf/simulated/floor/tiled/derelict/white_big_edges,/area/nadezhda/outside/one_star)
 "aj" = (/obj/structure/closet/onestar/tier3/special,/turf/simulated/floor/tiled/derelict/white_big_edges,/area/nadezhda/outside/one_star)
-"ak" = (/turf/space,/area/nadezhda/outside/meadow)
+"ak" = (/turf/simulated/wall/wood/old,/area/nadezhda/outside/meadow)
 "al" = (/obj/item/weapon/material/shard,/obj/structure/salvageable/implant_container_os,/turf/simulated/floor/tiled/white,/area/nadezhda/maintenance/outside/zoo)
 "am" = (/obj/machinery/power/apc{cell_type = /obj/item/weapon/cell/large/moebius/nuclear; dir = 1; name = "North APC"; pixel_y = 28},/obj/structure/catwalk,/turf/simulated/floor/plating/under,/area/nadezhda/maintenance/outside/smuggler_zone_u)
 "an" = (/obj/structure/closet/onestar/tier2/medical,/turf/simulated/floor/tiled/derelict/white_big_edges,/area/nadezhda/outside/one_star)
@@ -26,6 +26,7 @@
 "az" = (/obj/structure/closet/onestar/tier3/normal,/turf/simulated/floor/tiled/derelict/white_big_edges,/area/nadezhda/outside/one_star)
 "aA" = (/turf/simulated/floor/tiled/derelict/white_big_edges,/area/nadezhda/outside/one_star)
 "aB" = (/obj/random/scrap/sparse_even/low_chance,/turf/simulated/floor/asteroid/dirt,/area/asteroid/rogue)
+"aC" = (/obj/structure/bed,/obj/landmark/join/start/aborigine,/turf/simulated/floor/wood/wild4,/area/nadezhda/outside/meadow)
 "aD" = (/obj/random/scrap/dense_weighted,/turf/simulated/floor/asteroid/dirt,/area/nadezhda/maintenance/outside/monster_cave)
 "aE" = (/obj/structure/invislight,/turf/simulated/floor/asteroid/dirt,/area/nadezhda/maintenance/outside/monster_cave)
 "aF" = (/obj/random/toolbox/low_chance,/turf/simulated/floor/asteroid/dirt,/area/asteroid/rogue)
@@ -34,6 +35,7 @@
 "aI" = (/obj/random/scrap/dense_weighted,/obj/random/scrap/dense_weighted,/turf/simulated/floor/asteroid/dirt,/area/nadezhda/maintenance/outside/monster_cave)
 "aJ" = (/obj/effect/decal/cleanable/blood,/obj/item/clothing/glasses/powered/thermal/plain/eyepatch,/turf/simulated/floor/asteroid/dirt,/area/asteroid/rogue)
 "aK" = (/obj/effect/decal/cleanable/blood,/turf/simulated/floor/asteroid/dirt,/area/asteroid/rogue)
+"aL" = (/obj/structure/bed,/obj/landmark/join/start/aborigine,/turf/simulated/floor/plating/under,/area/nadezhda/outside/meadow)
 "aM" = (/obj/item/ammo_magazine/maxim,/obj/structure/closet/crate/serbcrate,/obj/item/ammo_magazine/maxim,/turf/simulated/floor/wood/wild4,/area/asteroid/rogue)
 "aN" = (/obj/effect/gibspawner/human,/turf/simulated/floor/asteroid/dirt,/area/nadezhda/maintenance/outside/monster_cave)
 "aO" = (/obj/effect/gibspawner/human,/turf/simulated/floor/asteroid/dirt,/area/asteroid/rogue)
@@ -1850,11 +1852,9 @@
 "KU" = (/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/plating/under,/area/nadezhda/outside/meadow)
 "KV" = (/obj/structure/table/woodentable,/obj/item/weapon/tool/weldingtool,/obj/item/weapon/tool/wirecutters,/obj/item/weapon/tool/wrench,/obj/item/weapon/tool/screwdriver,/obj/item/weapon/tool/crowbar,/obj/random/junkfood/low_chance,/turf/simulated/floor/wood/wild4,/area/nadezhda/outside/meadow)
 "KW" = (/obj/structure/noticeboard{pixel_y = 32},/obj/structure/bed/chair{dir = 8},/turf/simulated/floor/plating/under,/area/nadezhda/outside/meadow)
-"KX" = (/obj/structure/bed,/turf/simulated/floor/wood/wild4,/area/nadezhda/outside/meadow)
 "KZ" = (/obj/structure/bed/chair{dir = 4; name = "bailiff chair"},/turf/simulated/floor/wood/wild4,/area/nadezhda/outside/meadow)
 "La" = (/obj/structure/table/woodentable,/obj/item/weapon/gun/launcher/crossbow,/obj/item/weapon/arrow/rod,/obj/item/weapon/arrow/rod,/obj/random/pouch/low_chance,/turf/simulated/floor/wood/wild4,/area/nadezhda/outside/meadow)
 "Lb" = (/obj/random/scrap/sparse_even/low_chance,/obj/random/scrap/sparse_even/low_chance,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/meadow)
-"Lc" = (/obj/structure/bed,/turf/simulated/floor/plating/under,/area/nadezhda/outside/meadow)
 "Ld" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/meadow)
 
 (1,1,1) = {"
@@ -2164,9 +2164,9 @@ fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRySySyRyRyRyRyRyRDxfEfEgfhAhAhAhAhAhAhAKIKI
 fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRyQyQyRyRyRDxDxDxDxDxgdgfhAhAhAhAhAhAhAChKIKIKIKIKIKIKIKIyPFwFwFwFwFwFwFwFwHNHNafrTqxrKrKrLrMrNrLrKrKqxrTafafqxqxqxqxafafrTrTrTrTrTafafqxqxqxqxafafrTqxrKrKrNrOrNrLrKrKqxrTafHNHNFwFwFwFwFwFwFwFwyPKIKIhAhAhAhAjrilBajshkakKGJiKHakKIKIKIKIKIKIKJKIKIKKDlEwDBgfgfhAhAhAhAhAhAAdHqKIKIKIKIGpAdyFhkhkhkhkhkhkhlilililhlhkhkhAAdAdKLIUKmKnKoKMKIirKIhkhkhwfEfEfEfEfEfEfEfEfEfF
 fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEFoFoJUJUFoFoFoFoFoFoFoFoKIhAhAhAhAhAhAhAhAEjHsKIKIKIKIzMKIKIyPFwFwFwFwFwFwFwFwHNHNafpJqxrKrKrPrLrNrQrKrKqxrTafafafafafafafafpHaoafpHaoafafafafafafafafrTqxrKrKrLrNrLrNrKrKqxpJafHNHNFwFwFwFwFwFwFwFwyPKIKIhAhAhAhAzTilBajshkakakakakakKIKIKIKIKIKIKIKIKIKIKIDlDlHnAdAdhAhAhAhAhAhAHmKIKIhAhAhAhAgfhkhkhkhkhChCililililhChChkhkhAhAKNKNKOKFKFKFKIKIKIhEhkhwfEfEfEfEfEfEfEfEfEfF
 fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEFoFoFoFoFoFoFoFoFoFoFoFoKIBVhAhAhAhAhAhAhAhADtDBKIKIKIKIKIvJyPFwFwFwFwFwFwFwFwHNHNafrTqxrKrKrKrKrKrKrKrKqxrTafafafrTrTrTrTpJrTrTrTrTrTpJrRrTrTrTafafafrTqxrKrKrKrKrKrKrKrKqxrTafHNHNFwFwFwFwFwFwFwFwyPKIKIhAhAhAhAjsililvmhkEpKAKPvHKQKIakakakKpakakakKpakakakDlHoHnKRAdhkhkhkhkhkhkililhkhkhkhkhkhkhkhkilililililyKililhCHthlhlzKKIKIKFKFKMKFvJKIKIilvYhwfEfEfEfEfEfEfEfEfEfF
-fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEFoFoFoFoFoFoFoFoFoFoFoFovJAzhAhAhAhAhAhAhAhAhADtKIKIKIKIKIKIyPFwFwFwFwFwFwFwFwHNHNafrTqxqxqxqxqxqxrKrKrKqxpJafafafrTqxqxqxqxqxqxqxqxqxqxqxqxqxrTafafafpJqxrKrKrKqxqxqxqxqxqxrTafHNHNFwFwFwFwFwFwFwFwyPKIKIuRhAhAhAjrililjrhkEpHuKSKTKUKIakKVKWJUKXJUKXJUJUKxakKIKIKIKIAdhkhkhkhkhkhkililyvhkhkhkhkhkhkhkBCilvYililililililililAMKICfKIKIKrKNIUwXKIKIililfEfEfEfEfEfEfEfEfEfEfF
+fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEFoFoFoFoFoFoFoFoFoFoFoFovJAzhAhAhAhAhAhAhAhAhADtKIKIKIKIKIKIyPFwFwFwFwFwFwFwFwHNHNafrTqxqxqxqxqxqxrKrKrKqxpJafafafrTqxqxqxqxqxqxqxqxqxqxqxqxqxrTafafafpJqxrKrKrKqxqxqxqxqxqxrTafHNHNFwFwFwFwFwFwFwFwyPKIKIuRhAhAhAjrililjrhkEpHuKSKTKUKIakKVKWJUaCJUaCJUJUKxakKIKIKIKIAdhkhkhkhkhkhkililyvhkhkhkhkhkhkhkBCilvYililililililililAMKICfKIKIKrKNIUwXKIKIililfEfEfEfEfEfEfEfEfEfEfF
 fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEFoFoFoFoFoFoFoFoFoFoFoFoKIAzKIhAhAhAhAhAhAhAhADtAzKIKIKIDlKIyPFwFwFwFwFwFwFwFwHNHNafrTrTrTrTrTpJqxrKrKrKqxrTafafafrTrTqxqxqxqxqxqxqxqxqxqxqxrTrTafafafrTqxrKrKrKqxpJrTrTrTrTrTafHNHNFwFwFwFwFwFwFwFwyPKIKIKIhAhAhAjrysiljrEfhAKIKIKIKIKIKpJUJUJUJUJUJUJUKZLaakKILbJXAzHvhkhkhkhkhkhkAoilhkhkhkhkhkhkhkhkililililililililililililKIKIKIKIKrKIKIKIKIKIililfEfEfEfEfEfEfEfEfEfEfF
-fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEBLBLBLFoFoFoFoFoFoFoKIKIKIKIHwhAhAhAhAhAhAhAhAAdAzKIKIDlKIKIyPFwFwFwFwFwFwFwFwHNHNafafafafafafafqxrKrKrKqxafafafafafrTpJqxqxqxrKrKrKqxqxqxpJrTafafafafafqxrKrKrKqxafafafafafafafHNHNFwFwFwFwFwFwFwFwyPKIKIKIhAhAhAvmysiljrjrhAhAHxKAKIKIakJULcJUJUKXJUKXDthAhAhAhAAdhAhAhkhkhkhkhkAivYAohkhkhkhkhkhkhkhlHzililililililililhlhlhkhAhAKIKIKNKIKOKIKIKIilhwfEfEfEfEfEfEfEfEfEfEfF
+fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEBLBLBLFoFoFoFoFoFoFoKIKIKIKIHwhAhAhAhAhAhAhAhAAdAzKIKIDlKIKIyPFwFwFwFwFwFwFwFwHNHNafafafafafafafqxrKrKrKqxafafafafafrTpJqxqxqxrKrKrKqxqxqxpJrTafafafafafqxrKrKrKqxafafafafafafafHNHNFwFwFwFwFwFwFwFwyPKIKIKIhAhAhAvmysiljrjrhAhAHxKAKIKIakJUaLJUJUaCJUaCDthAhAhAhAAdhAhAhkhkhkhkhkAivYAohkhkhkhkhkhkhkhlHzililililililililhlhlhkhAhAKIKIKNKIKOKIKIKIilhwfEfEfEfEfEfEfEfEfEfEfF
 fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEBLBLBLBLBLBLBLFoFoKIKIKIzMKIAzhAhAhAhAhAhAhAAdAdKIKIKIKIKIKIyPFwFwFwFwFwFwFwFwFwHNHNHNHNHNHNHNafqxrKrKrKqxafafafafafafrTrTqxqxrKrSrKqxqxrTrTafafafafafafqxrKrKrKqxafHNHNHNHNHNHNHNFwFwFwFwFwFwFwFwFwyPKIKIKIhAhAhAhkysililhkhAhAHxDtKIKIakakakakakakzPAFhkhkhkhkhkhkhkhkhkhkhkhkAiAiilAoAihkhkhkhkhkhkhkhlhkilililililhChlhkhkhkhAhADAKIKIKILdKIBLKIhwhwfEfEfEfEfEfEfEfEfEfEfF
 fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEBLBLBLBLBLBLBLBLEKCxKIvJKIKIAzHAhAhAhAhAhAhAAdhAKIKIKIvJKIKIyPFwFwFwFwFwFwFwFwFwHNHNHNHNHNHNHNafqxrKrKrKqxafafafafafafafrTrTrTrKrKrKrTrTrTafafafafafafafqxrKrKrKqxafHNHNHNHNHNHNHNFwFwFwFwFwFwFwFwFwHNKIDlKIKIhAhAhkysysilhkhAhAhADtDtKIHyKIKIKIKIDtzPhkhkhkhkhkhkAihkhkhkhkhkhkhkhkililAihkhkhkhkhkhkhkhkhlhkhkililhChlhkhkhkhkhAhAhAAdKIKIKIBLBLBLhwhwfEfEfEfEfEfEfEfEfEfEfF
 fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEBLBLBLBLBLBLBLBLhAhACxKIKIKIKIKIAzhAhAhAhAhAhAhAKIKIKIKIKIKIHNFwFwFwFwFwFwFwFwFwFwHNHNHNHNHNHNafqxrKrKrKqxafafafafafafafafafafafafafafafafafafafafafafafqxrKrKrKqxafHNHNHNHNHNHNFwFwFwFwFwFwFwFwFwFwHNKIDlDluRhAhAzivWililyvElhAhAhAAdAzKIHyKIKIHBHxhkhkhkhkhkhkilAoAoAihkhkhkhkhkhkililAihkhkhkhkhkhkhkhkhkhlhkilililhkhkhkhkhkhkhkhkhlhlililhwhwhwhwhwfEfEfEfEfEfEfEfEfEfEfF
