@@ -18,7 +18,7 @@
 #define CREDS "&cent;"
 #define WRENCH_ICON "&#128295;"
 
-
+/*
 #define DEPARTMENT_COMMAND	"Command"
 #define DEPARTMENT_MEDICAL	"Medical"
 #define DEPARTMENT_ENGINEERING	"Engineering"
@@ -27,3 +27,14 @@
 #define DEPARTMENT_GUILD "Guild"
 #define DEPARTMENT_CIVILIAN	"Civilian"
 #define DEPARTMENT_CHURCH	"Church"
+*/
+
+#define DEPARTMENT_COMMAND	"Command"
+#define DEPARTMENT_MEDICAL	"Medical"
+#define DEPARTMENT_ENGINEERING	"Engineering"
+#define DEPARTMENT_SCIENCE	"Science"
+#define DEPARTMENT_SECURITY "Security"
+#define DEPARTMENT_LSS "Lonestar"
+#define DEPARTMENT_CIVILIAN	"Civilian"
+#define DEPARTMENT_CHURCH	"Church"
+#define DEPARTMENT_PROSPECTOR "Prospectors"

@@ -165,6 +165,22 @@
 	body_parts_covered = NONE
 	siemens_coefficient = 0.8
 
+/obj/item/clothing/suit/armor/hos
+	name = "armored coat"
+	desc = "A greatcoat enhanced with a special alloy for some protection and style."
+	icon_state = "hos"
+	item_state = "hos"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	armor = list(
+		melee = 40,
+		bullet = 40,
+		energy = 30,
+		bomb = 25,
+		bio = 0,
+		rad = 0
+	)
+	siemens_coefficient = 0.6
+
 /*
  * Navy uniforms
  */

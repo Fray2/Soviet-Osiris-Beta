@@ -1,17 +1,17 @@
 /datum/job/rd
-	title = "Moebius Expedition Overseer"
-	title_ru = "Заведующий экспедицией"
-	flag = MEO
+	title = "Chief Research Overseer"
+	flag = CRO
 	head_position = 1
 	department = DEPARTMENT_SCIENCE
 	department_flag = SCIENCE | COMMAND
-	faction = "CEV Eris"
+	faction = MAP_FACTION
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Корпорацией Moebius"
+	supervisors = "the Nadezhda Council"
+//	difficulty = "Medium."
 	selection_color = "#b39aaf"
 	req_admin_notify = 1
-	wage = WAGE_NONE
+	wage = WAGE_COMMAND
 	also_known_languages = list(LANGUAGE_CYRILLIC = 25, LANGUAGE_SERBIAN = 25)
 
 	outfit_type = /decl/hierarchy/outfit/job/science/rd
@@ -21,9 +21,11 @@
 		access_tox_storage, access_teleporter, access_sec_doors,
 		access_moebius, access_medical_equip, access_chemistry, access_virology, access_cmo, access_surgery, access_psychiatrist,
 		access_robotics, access_xenobiology, access_ai_upload, access_tech_storage, access_eva, access_external_airlocks,
-		access_RC_announce, access_keycard_auth, access_tcomsat, access_gateway, access_xenoarch, access_network, access_research_equipment
+		access_RC_announce, access_keycard_auth, access_tcomsat, access_gateway, access_xenoarch, access_network, access_maint_tunnels, access_research_equipment
+
 	)
-	ideal_character_age = 50
+	ideal_character_age = 40
+	minimum_character_age = 30
 
 	stat_modifiers = list(
 		STAT_MEC = 25,
@@ -39,33 +41,33 @@
 							/datum/computer_file/program/chem_catalog,
 							/datum/computer_file/program/reports)
 
-	description = "You are the head of the moebius research branch, tasked with directing shipboard research to new and profitable discoveries."
+	description = "Главный научный надзиратель является руководителем научно-исследовательского отделения Института Сотерия, руководящего научной деятельностью.<br>\
+	Ученые под вашим командованием dutiesют над целым рядом проектов. Исследуйте то, чего требуют запросы.<br>\
+Осуществляя надзор за отделами, вы также можете приобретать научные артефакты и все остальное, имеющее научную ценность, - даже финансируя миссии вне стен колонии.<br>\
+	Используйте вашу позицию, чтобы запросить поддержку у других фракций, если это необходимо. Большинство колонистов не понимают вашу работу, но знают ее ценность.<br>\
+	Конечно, помните, что вы сами ученый - не стесняйтесь заходить в лабораторию и заниматься исследованиями и разработками.<br>\
+	Медицинский отдел также попадает в собственность Сотерии. Вы можете использовать их ресурсы - и они могут использовать ваши - по мере необходимости."
 
-	duties = "Direct the scientists under your command, ensure they work efficiently towards the bettering of all mankind.<br>\
-Use department funds to purchase scientific curios, artefacts, and anything of interesting research value. As well as any equipment and supplies that would be useful for these ends<br>\
-Organise away missions to gather artefacts and research interesting environments. You have the right to request support from other factions as required"
-
-	loyalties = "As a scientist, your first loyalty is to knowledge, the ultimate good in the universe. Learning and developing new technologies is the greatest goal humanity can pursue, and no sacrifice is too great to achieve that end. Even the lives of others or yourself.<br>\
-<br>\
-Your second loyalty is to moebius corp. In order to ensure it can continue its mission of research, it must remain profitable. Ensure its interests are farthered, and take care of your colleagues in both research and medical wings"
+	duties = "Направьте ученых под вашим командованием на благо всего человечества.<br>\
+	Обеспечьте здоровый запас исследовательского оборудования через управление фондами отдела.<br>\
+	Рассмотрите возможность организации выездных миссий и экспедиций для приобретения артефактов и других ценных предметов.."
 
 /obj/landmark/join/start/rd
-	name = "Moebius Expedition Overseer"
+	name = "Chief Research Overseer"
 	icon_state = "player-purple-officer"
 	join_tag = /datum/job/rd
 
 
-
 /datum/job/scientist
-	title = "Moebius Scientist"
-	title_ru = "Ученый"
+	title = "Soteria Scientist"
 	flag = SCIENTIST
 	department = DEPARTMENT_SCIENCE
 	department_flag = SCIENCE
-	faction = "CEV Eris"
+	faction = MAP_FACTION
 	total_positions = 5
 	spawn_positions = 5
-	supervisors = "Заведующим экспедицией"
+	supervisors = "the Chief Research Overseer"
+//	difficulty = "Medium."
 	selection_color = "#bdb1bb"
 	wage = WAGE_PROFESSIONAL
 	also_known_languages = list(LANGUAGE_CYRILLIC = 10)
@@ -86,45 +88,32 @@ Your second loyalty is to moebius corp. In order to ensure it can continue its m
 		STAT_BIO = 20,
 	)
 
-	description = "You are a scientist, standing at the frontier of human advancement. Here representing Moebius corp, to find new research opportunities in deep space. The science wing is located in the second section, starboard side, opposite medical, and your medical colleagues should be fast friends. The medical wing is part of Moebius too, and so you fully share access with each other, and are free to use each others' supplies.<br>\
-<br>\
-As a scientist, your primary purpose is research, testing, and the advancement of knowledge. You can justify almost anything if its done for the purpose of science, and people have no reason to be suspicious if you stomp around wearing strange devices and carrying stranger weapons still. You should craft, lathe and print anything you can, toy around with it, and figure out how it works in detail. Deeply explore everything you can.<br>\
-<br>\
-There are a few specialist branches within the research wing that you may delve deeper into:<br>\
-	<br>\
-	R&D: The manufacture and testing of high tech weapons and devices. This branch shares a lab with robotics, and often works closely together to produce vast machines.<br>\
-	Xenoflora: A lab dedicated to experimenting and modifying plant DNA, creating interesting mutated plants that may help the crew<br>\
-	Xenobiology: A wing full of cells, for the study of alien life forms. Primarily slimes<br>\
-	Xenoarchaeology: A facility for analysing artefacts and finds brought back from expeditions.<br>\
-	<br>\
-	The Vasily Dokuchaev is the Expedition shuttle, and is intended for going on adventures down to strange sites, and recovering items of value. <br>\
-	<br>\
-	<br>\[Note: Research content on Eris is still in its infancy, and is mostly just baystation content at the moment. We have major plans for redesigning it in the future\]"
+	description = "Ученый - исследователь, представляющий Институт Сотерии, стоящий на границе прогресса человечества.<br>\
+	Вы можете участвовать в различных исследовательских проектах в четырех различных областях - исследования и разработки, ксенофлора, ксенобиология и ксеноархеология.<br>\
+	Производство высокотехнологичных устройств является основным источником дохода для Soteria, но артефакты и инопланетная жизнь могут предложить большой потенциал.<br>\
+	Помните, что для робототехники существуют специальные специалисты. Вы можете dutiesть в тесном сотрудничестве для общих исследований и разработок, но не тратьте свое время на робототехнику, ведь кто если не вы будет проводить исследования?."
 
-	duties = "	Create unusual things and experiment with them<br>\
-	Explore, learn and adventure, do anything to advance the cause of knowledge"
-
-	loyalties = "As a scientist, your first loyalty is to knowledge, the ultimate good in the universe. Learning and developing new technologies is the greatest goal humanity can pursue, and no sacrifice is too great to achieve that end. Even the lives of others or yourself.<br>\
-
-Your second loyalty is to moebius corp. In order to ensure it can continue its mission of research, it must remain profitable. Ensure its interests are farthered, and take care of your colleagues in both research and medical wings"
-
+	duties = "Продвигать дело знаний с различными исследовательскими проектами.<br>\
+	Создавайте новые устройства и оружие по мере продвижения по дереву исследований и разработок..<br>\
+	Управлять ДНК растений и исследуйте инопланетную жизнь и устройства.<br>\
+	Создавайте необычные вещи, исследуйте, учитесь и совершайте научные прорывы."
 
 /obj/landmark/join/start/scientist
-	name = "Moebius Scientist"
+	name = "Soteria Scientist"
 	icon_state = "player-purple"
 	join_tag = /datum/job/scientist
 
 
 /datum/job/roboticist
-	title = "Moebius Roboticist"
-	title_ru = "Роботехник"
+	title = "Soteria Roboticist"
 	flag = ROBOTICIST
 	department = DEPARTMENT_SCIENCE
 	department_flag = SCIENCE
-	faction = "CEV Eris"
-	total_positions = 3
-	spawn_positions = 3
-	supervisors = "Заведующим экспедицией"
+	faction = MAP_FACTION
+	total_positions = 2
+	spawn_positions = 2
+	supervisors = "the Chief Research Overseer"
+//	difficulty = "Medium."
 	selection_color = "#bdb1bb"
 	wage = WAGE_PROFESSIONAL
 	also_known_languages = list(LANGUAGE_CYRILLIC = 10)
@@ -143,25 +132,18 @@ Your second loyalty is to moebius corp. In order to ensure it can continue its m
 		STAT_BIO = 25,
 	)
 
+	description = "Роботист - специализированный ученый с большой рабочей нагрузкой - в авангарде сервисных предложений Soteria.<br>\
+	Вы должны поддерживать и модернизировать парк синтетических материалов, которые обеспечивают работу корабля, а также создавать новые при необходимости.<br>\
+Кроме того, вас могут попросить изготовить протезы конечностей и улучшения. Медицинский персонал может выполнить установку, если вам не хватает хирургических навыков.<br>\
+	Хотя это не часто требуется, вы также можете создавать массивные и мощные механизированные транспортные средства. Они имеют мощное горное, спасательное и военное применение.<br>\
+	Помните, что в конечном итоге вы управляете коммерческой кибернетической клиникой - Пусть вам плятят за ваши ценные услуги, чтобы зарабатывать на жизнь."
 
-
-	description = "As a roboticist, you are probably the busiest person in the research wing. For it is the only area of the department that focuses on providing services to others.<br>\
-<br>\
-You have a broad range of tools and machinery at your disposal, and a similarly broad range of responsibilities. You will also have a constant stream of visitors, and rarely a moment to yourself<br>\
-<br>\
-The duties of robotics are many, and the lab often benefits from having multiple staff.<br>\
-You must maintain, tend to, and upgrade the fleet of synthetics that help keep the ship running. Farther to that, the duty of constructing new robots falls to you too. With the aid of your fabricators, you may turn a pile of sheet metal and wires into sentient life. The robots of the ship are operated by moebius, and its not unknown for roboticists to develop a parental attachment to them.<br>\
-<br>\
-In addition, your department contains the manufacturing facilities for prosthetic limbs and enhancements. It typically also falls to you to install them too, and thus it is common for biomechanical engineers to work in the robotics lab. This may or may not be in your character's skillset. If surgery isn't your specialty, you may defer the implementation to your colleagues over in Moebius Medical instead, and simply supply the parts for them to install.<br>\
-<br>\
-Lastly, though they're not commonly used, you have the facilities to construct massive and powerful mechanised vehicles. These have powerful capabilities in mining and rescue, as well as obvious military applications"
-
-	duties = "	Repair, maintain and upgrade robots aboard Eris<br>\
-	Maintain and implant new bionics in crewmembers<br>\
-	Advertise bionics for sale and run a commercial cybernetic clinic<br>\
-	Construct large mechas for specialised use in departments"
+	duties = "Ремонт, обслуживание и модернизация роботов в колонии.<br>\
+	Поддерживать и внедрять новые бионики в членов экипажа.<br>\
+	Рекламируйте бионику на продажу и управляйте коммерческой кибернетической клиникой.<br>\
+	Построить большие механизмы для специализированного использования в отделах."
 
 /obj/landmark/join/start/roboticist
-	name = "Moebius Roboticist"
+	name = "Soteria Roboticist"
 	icon_state = "player-purple"
 	join_tag = /datum/job/roboticist

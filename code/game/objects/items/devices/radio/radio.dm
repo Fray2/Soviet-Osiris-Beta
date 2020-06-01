@@ -11,7 +11,8 @@ var/global/list/default_internal_channels = list(
 	num2text(SEC_I_FREQ)=list(access_security),
 	num2text(SCI_FREQ) = list(access_tox,access_robotics,access_xenobiology),
 	num2text(SUP_FREQ) = list(access_cargo),
-	num2text(SRV_FREQ) = list(access_janitor, access_hydroponics)
+	num2text(SRV_FREQ) = list(access_janitor, access_hydroponics),
+	num2text(PRO_FREQ) = list(access_prospector)
 )
 
 var/global/list/default_medbay_channels = list(
@@ -746,3 +747,12 @@ var/global/list/default_medbay_channels = list(
 /obj/item/device/radio/phone/medbay/New()
 	..()
 	internal_channels = default_medbay_channels.Copy()
+
+/obj/item/device/radio/aborigen
+	listening = 0
+	frequency = 1465
+	broadcasting = 0
+	canhear_range = 2
+	name = "old radio"
+	icon_state = "walkietalkie"
+	item_state = "walkietalkie"
